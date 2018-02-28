@@ -28,7 +28,8 @@ body {
     font-size: 3em;
     text-align: center;
     background-color: black;
-    height: 80px; }
+    height: 80px;
+    cursor: pointer; }
     body #topMenu #menuSymbol {
       padding: auto 0; }
   body #allButtons {
@@ -42,10 +43,29 @@ body {
     font-size: 2.8em;
     text-align: center;
     background-color: lightgrey;
-    width: 80%; }
+    width: 80%;
+    animation-duration: 0.4s;
+    animation-name: open;
+    animation-play-state: paused; }
+@keyframes open {
+  0% {
+    height: 0px; }
+  100% {
+    height: 720px; } }
     body #allButtons .oneButton {
       border-bottom: 1px solid black;
-      padding: 20px 0; }
+      animation-duration: 0.4s;
+      animation-name: openButton;
+      animation-play-state: paused;
+      padding: 20px 0;
+      height: 80px; }
+@keyframes openButton {
+  0% {
+    padding: 0px;
+    height: 0px; }
+  100% {
+    padding: 20px 0;
+    height: 80px; } }
     body #allButtons div:hover {
       color: white;
       background-color: darkgrey;
