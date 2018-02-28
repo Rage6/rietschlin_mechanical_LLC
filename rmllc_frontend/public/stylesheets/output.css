@@ -97,5 +97,18 @@ body {
         margin: 30px 10%; }
         body #mainContent #intro ul li {
           margin: 10px 0; }
+    body #mainContent .contentBox {
+      margin: 20px 3%;
+      border: 3px dashed blue; }
+      body #mainContent .contentBox .boxTitle {
+        margin: 0;
+        padding: 30px;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'Permanent Marker', cursive;
+        color: white;
+        background-color: blue; }
+      body #mainContent .contentBox .boxContent {
+        margin: 80px 10%; }
 
 /*# sourceMappingURL=output.css.map */

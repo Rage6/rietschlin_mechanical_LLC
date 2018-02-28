@@ -111,5 +111,22 @@ body {
         }
       }
     }
+    .contentBox {
+      margin: 20px 3%;
+      border: 3px dashed blue;
+      .boxTitle {
+        margin: 0;
+        padding: 30px;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'Permanent Marker', cursive;
+        color: white;
+        background-color: blue;
+      }
+      .boxContent {
+        margin: 80px 10%;
+      }
+    }
+
   }
 }
