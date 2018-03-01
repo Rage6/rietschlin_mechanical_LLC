@@ -1,3 +1,11 @@
+html {
+  animation-name: htmlTop;
+  animation-duration: 1s;
+  animation-play-state: paused;
+  // @keyframes htmlTop {
+  //   0%   { top: 0px };
+  //   100% { top: 300px };
+  // }
 body {
   margin: 0;
   border: 0;
@@ -71,6 +79,10 @@ body {
       padding: 20px 0;
       height: 80px;
     }
+    a {
+      color: black;
+      text-decoration: none;
+    }
     div:hover {
       color: white;
       background-color: darkgrey;
@@ -129,4 +141,5 @@ body {
     }
 
   }
+}
 }

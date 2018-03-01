@@ -9,7 +9,7 @@
   src="http://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+  <script src="app.js"></script>
   </head>
   <body>
     <div id="title">
@@ -23,24 +23,36 @@
       </div>
     </div>
     <div id="allButtons">
-      <div class="oneButton" id="elecButton">
-        Electrical
-      </div>
-      <div class="oneButton" id="hvacButton">
-        HVAC
-      </div>
-      <div class="oneButton" id="refButton">
-        Refrigeration
-      </div>
-      <div class="oneButton" id="contractButton">
-        Contracting
-      </div>
-      <div class="oneButton" id="estimButton">
-        Estimates
-      </div>
-      <div class="oneButton" id="contactButton">
-        Contact Us
-      </div>
+      <!-- <a href="#elecLink"> -->
+        <div class="oneButton" id="elecButton">
+          Electrical
+        </div>
+      <!-- </a> -->
+      <a href="#hvacLink">
+        <div class="oneButton" id="hvacButton">
+          HVAC
+        </div>
+      </a>
+      <a href="#refLink">
+        <div class="oneButton" id="refButton">
+          Refrigeration
+        </div>
+      </a>
+      <a href="#contractLink">
+        <div class="oneButton" id="contractButton">
+          Contracting
+        </div>
+      </a>
+      <a href="#estimLink">
+        <div class="oneButton" id="estimButton">
+          Estimates
+        </div>
+      </a>
+      <a href="#contactLink">
+        <div class="oneButton" id="contactButton">
+          Contact Us
+        </div>
+      </a>
     </div>
     <div id="mainContent">
       <div id="motto">
@@ -57,54 +69,66 @@
           <li>Air Conditioning</li>
         </ul>
       </div>
-      <div class="contentBox" id="elecBox">
-        <div class="boxTitle">
-           Electricals
+      <a name="elecLink">
+        <div class="contentBox" id="elecBox">
+          <div class="boxTitle">
+             Electricals
+          </div>
+          <div class="boxContent">
+            Electricals are really the heartbeat of any building. Everything from lights to waterpumps rely on those wires behind the walls. This means that a new building's electrical system needs to be done right the first time, and aging buildings need to have their system maintained regularly. We at <u>Rietschlin Mechanical</u> pride ourselves in extensive training and experience with all types of wiring installation and updates in both old structures and new.
+          </div>
         </div>
-        <div class="boxContent">
-          Electricals are really the heartbeat of any building. In most cases, everything from lights to waterpumps rely on those wires behind those walls. This means that a new building's electrical system needs to be done right the first time, and aging buildings need to have their system maintained regularly. We at <u>Rietschlin Mechanical</u> pride ourselves in extensive training and experience with all types of wiring installation and updates in both old structures and new.
+      </a>
+      <a name="hvacLink">
+        <div class="contentBox" id="hvacBox">
+          <div class="boxTitle">
+            Heating, Ventilation, and AC
+          </div>
+          <div class="boxContent">
+            BLAH BLAH BLAH
+          </div>
         </div>
-      </div>
-      <div class="contentBox" id="hvacBox">
-        <div class="boxTitle">
-          Heating, Ventilation, and AC
+      </a>
+      <a name="refLink">
+        <div class="contentBox" id="refBox">
+          <div class="boxTitle">
+            Refrigeration
+          </div>
+          <div class="boxContent">
+            BLAH BLAH BLAH
+          </div>
         </div>
-        <div class="boxContent">
-          BLAH BLAH BLAH
+      </a>
+      <a name="contractLink">
+        <div class="contentBox" id="contractBox">
+          <div class="boxTitle">
+            Contracting
+          </div>
+          <div class="boxContent">
+            BLAH BLAH BLAH
+          </div>
         </div>
-      </div>
-      <div class="contentBox" id="refBox">
-        <div class="boxTitle">
-          Refrigeration
+      </a>
+      <a name="estimLink">
+        <div class="contentBox" id="estimBox">
+          <div class="boxTitle">
+            Estimates
+          </div>
+          <div class="boxContent">
+            BLAH BLAH BLAH
+          </div>
         </div>
-        <div class="boxContent">
-          BLAH BLAH BLAH
+      </a>
+      <a name="contactLink">
+        <div class="contentBox" id="contactBox">
+          <div class="boxTitle">
+            Contact Us
+          </div>
+          <div class="boxContent">
+            BLAH BLAH BLAH
+          </div>
         </div>
-      </div>
-      <div class="contentBox" id="contractBox">
-        <div class="boxTitle">
-          Contracting
-        </div>
-        <div class="boxContent">
-          BLAH BLAH BLAH
-        </div>
-      </div>
-      <div class="contentBox" id="estimBox">
-        <div class="boxTitle">
-          Estimates
-        </div>
-        <div class="boxContent">
-          BLAH BLAH BLAH
-        </div>
-      </div>
-      <div class="contentBox" id="contactBox">
-        <div class="boxTitle">
-          Contact Us
-        </div>
-        <div class="boxContent">
-          BLAH BLAH BLAH
-        </div>
-      </div>
+      </a>
     </div>
   </body>
 </html>

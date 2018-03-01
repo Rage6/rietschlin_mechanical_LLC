@@ -5,6 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.16.2",
+    "jquery.localscroll": "^2.0.0",
+    "jquery.scrollto": "^2.1.2",
     "json": "^9.0.6",
     "nodemon": "^1.15.1",
     "package": "^1.0.1",
