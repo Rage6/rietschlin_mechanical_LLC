@@ -117,5 +117,21 @@ html {
           background-color: blue; }
         html body #mainContent .contentBox .boxContent {
           margin: 80px 10%; }
+          html body #mainContent .contentBox .boxContent .emailText {
+            font-family: 'Permanent Marker', cursive; }
+          html body #mainContent .contentBox .boxContent #emailSymbol {
+            margin: 40px auto;
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 20px 10%;
+            font-size: 1.2em;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            background-color: lightblue;
+            display: block;
+            width: 50%; }
+          html body #mainContent .contentBox .boxContent img {
+            width: 80%; }
 
 /*# sourceMappingURL=output.css.map */

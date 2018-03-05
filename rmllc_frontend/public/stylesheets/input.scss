@@ -6,140 +6,158 @@ html {
   //   0%   { top: 0px };
   //   100% { top: 300px };
   // }
-body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  #title {
-    background-image: url("./img/wwnurdem.bmp");
-    background-size: cover;
-    #front {
-      background-color: rgba(255,255,255,1.0);
-      animation-duration: 5s;
-      animation-iteration-count: infinite;
-      animation-name: titleSlide;
-      @keyframes titleSlide {
-        0%   { background-color: rgba(255,255,255,1.0); }
-        10%  { background-color: rgba(255,255,255,0.6); }
-        90%  { background-color: rgba(255,255,255,0.6); }
-        100% { background-color: rgba(255,255,255,1.0); }
-      }
-      img {
-        opacity: 2;
-        margin: 100px 5%;
-        width: 90%;
-      }
-    }
-  }
-  #topMenu {
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    background-color: black;
-    height: 80px;
-    cursor: pointer;
-    #menuSymbol {
-      padding: auto 0;
-    }
-  }
-  #allButtons {
-    margin: 0 10%;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    display: none;
-    position: absolute;
-    z-index: 1;
-    padding-top: 20px;
-    font-size: 2.8em;
-    text-align: center;
-    background-color: lightgrey;
-    width: 80%;
-    animation-duration: 0.4s;
-    animation-name: open;
-    animation-play-state: paused;
-    @keyframes open {
-      0% { height: 0px; }
-      100% { height: 720px }
-    };
-    .oneButton {
-      border-bottom: 1px solid black;
-      animation-duration: 0.4s;
-      animation-name: openButton;
-      animation-play-state: paused;
-      @keyframes openButton {
-        0% {
-          padding: 0px;
-          height: 0px;
+  body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    #title {
+      background-image: url("./img/wwnurdem.bmp");
+      background-size: cover;
+      #front {
+        background-color: rgba(255,255,255,1.0);
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-name: titleSlide;
+        @keyframes titleSlide {
+          0%   { background-color: rgba(255,255,255,1.0); }
+          10%  { background-color: rgba(255,255,255,0.6); }
+          90%  { background-color: rgba(255,255,255,0.6); }
+          100% { background-color: rgba(255,255,255,1.0); }
         }
-        100% {
-          padding: 20px 0;
-          height: 80px;
+        img {
+          opacity: 2;
+          margin: 100px 5%;
+          width: 90%;
         }
-      };
-      padding: 20px 0;
-      height: 80px;
+      }
     }
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    div:hover {
+    #topMenu {
       color: white;
-      background-color: darkgrey;
-      cursor: pointer;
-    }
-    div:active {
-      border: 2px solid white;
-      color: white;
-    }
-  }
-  #mainContent {
-    font-size: 50px;
-    #motto {
-      font-size: 2em;
+      font-size: 3em;
       text-align: center;
-      width: 100%;
-      #problem {
-        font-family: 'Permanent Marker', cursive;
-        padding: 30px 0;
-        color: blue;
-      }
-      #solution {
-        padding: 30px 0;
-        font-size: 0.9em;
-        font-family: 'Permanent Marker', cursive;
-        color: white;
-        background-color: blue;
+      background-color: black;
+      height: 80px;
+      cursor: pointer;
+      #menuSymbol {
+        padding: auto 0;
       }
     }
-    #intro {
-      margin: 20px 3%;
-      border: 3px dashed blue;
-      padding: 80px 10%;
-      ul {
-        margin: 30px 10%;
-        li {
-          margin: 10px 0;
+    #allButtons {
+      margin: 0 10%;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      display: none;
+      position: absolute;
+      z-index: 1;
+      padding-top: 20px;
+      font-size: 2.8em;
+      text-align: center;
+      background-color: lightgrey;
+      width: 80%;
+      animation-duration: 0.4s;
+      animation-name: open;
+      animation-play-state: paused;
+      @keyframes open {
+        0% { height: 0px; }
+        100% { height: 720px }
+      };
+      .oneButton {
+        border-bottom: 1px solid black;
+        animation-duration: 0.4s;
+        animation-name: openButton;
+        animation-play-state: paused;
+        @keyframes openButton {
+          0% {
+            padding: 0px;
+            height: 0px;
+          }
+          100% {
+            padding: 20px 0;
+            height: 80px;
+          }
+        };
+        padding: 20px 0;
+        height: 80px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      div:hover {
+        color: white;
+        background-color: darkgrey;
+        cursor: pointer;
+      }
+      div:active {
+        border: 2px solid white;
+        color: white;
+      }
+    }
+    #mainContent {
+      font-size: 50px;
+      #motto {
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+        #problem {
+          font-family: 'Permanent Marker', cursive;
+          padding: 30px 0;
+          color: blue;
+        }
+        #solution {
+          padding: 30px 0;
+          font-size: 0.9em;
+          font-family: 'Permanent Marker', cursive;
+          color: white;
+          background-color: blue;
+        }
+      }
+      #intro {
+        margin: 20px 3%;
+        border: 3px dashed blue;
+        padding: 80px 10%;
+        ul {
+          margin: 30px 10%;
+          li {
+            margin: 10px 0;
+          }
+        }
+      }
+      .contentBox {
+        margin: 20px 3%;
+        border: 3px dashed blue;
+        .boxTitle {
+          margin: 0;
+          padding: 30px;
+          text-align: center;
+          font-size: 1.5em;
+          font-family: 'Permanent Marker', cursive;
+          color: white;
+          background-color: blue;
+        }
+        .boxContent {
+          margin: 80px 10%;
+          .emailText {
+            font-family: 'Permanent Marker', cursive;
+          }
+          #emailSymbol {
+            margin: 40px auto;
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 20px 10%;
+            font-size: 1.2em;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            background-color: lightblue;
+            display: block;
+            width: 50%;
+          }
+          img {
+            width: 80%;
+          }
         }
       }
     }
-    .contentBox {
-      margin: 20px 3%;
-      border: 3px dashed blue;
-      .boxTitle {
-        margin: 0;
-        padding: 30px;
-        text-align: center;
-        font-size: 1.5em;
-        font-family: 'Permanent Marker', cursive;
-        color: white;
-        background-color: blue;
-      }
-      .boxContent {
-        margin: 80px 10%;
-      }
-    }
-
   }
-}
 }
