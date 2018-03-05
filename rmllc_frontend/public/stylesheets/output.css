@@ -8,7 +8,8 @@ html {
     padding: 0; }
     html body #title {
       background-image: url("./img/wwnurdem.bmp");
-      background-size: cover; }
+      background-size: cover;
+      width: 100%; }
       html body #title #front {
         background-color: white;
         animation-duration: 5s;
@@ -104,34 +105,37 @@ html {
           margin: 30px 10%; }
           html body #mainContent #intro ul li {
             margin: 10px 0; }
-      html body #mainContent .contentBox {
-        margin: 20px 3%;
-        border: 3px dashed blue; }
-        html body #mainContent .contentBox .boxTitle {
-          margin: 0;
-          padding: 30px;
-          text-align: center;
-          font-size: 1.5em;
-          font-family: 'Permanent Marker', cursive;
-          color: white;
-          background-color: blue; }
-        html body #mainContent .contentBox .boxContent {
-          margin: 80px 10%; }
-          html body #mainContent .contentBox .boxContent .emailText {
-            font-family: 'Permanent Marker', cursive; }
-          html body #mainContent .contentBox .boxContent #emailSymbol {
-            margin: 40px auto;
-            border: 3px solid black;
-            border-radius: 30px;
-            padding: 20px 10%;
-            font-size: 1.2em;
-            color: black;
+      html body #mainContent #wrapBoxes {
+        display: block; }
+        html body #mainContent #wrapBoxes .contentBox {
+          margin: 20px 3%;
+          border: 3px dashed blue; }
+          html body #mainContent #wrapBoxes .contentBox .boxTitle {
+            margin: 0;
+            padding: 30px;
             text-align: center;
-            text-decoration: none;
-            background-color: lightblue;
-            display: block;
-            width: 50%; }
-          html body #mainContent .contentBox .boxContent img {
-            width: 80%; }
+            font-size: 1.5em;
+            font-family: 'Permanent Marker', cursive;
+            color: white;
+            background-color: blue; }
+          html body #mainContent #wrapBoxes .contentBox .boxContent {
+            margin: 80px 10%; }
+            html body #mainContent #wrapBoxes .contentBox .boxContent .emailText {
+              font-family: 'Permanent Marker', cursive; }
+            html body #mainContent #wrapBoxes .contentBox .boxContent #emailSymbol {
+              margin: 40px auto;
+              border: 3px solid black;
+              border-radius: 30px;
+              padding: 20px 10%;
+              font-size: 1.2em;
+              color: black;
+              text-align: center;
+              text-decoration: none;
+              background-color: lightblue;
+              display: block;
+              cursor: pointer;
+              width: 50%; }
+            html body #mainContent #wrapBoxes .contentBox .boxContent img {
+              width: 80%; }
 
 /*# sourceMappingURL=output.css.map */

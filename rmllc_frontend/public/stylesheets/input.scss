@@ -13,6 +13,7 @@ html {
     #title {
       background-image: url("./img/wwnurdem.bmp");
       background-size: cover;
+      width: 100%;
       #front {
         background-color: rgba(255,255,255,1.0);
         animation-duration: 5s;
@@ -123,38 +124,46 @@ html {
           }
         }
       }
-      .contentBox {
-        margin: 20px 3%;
-        border: 3px dashed blue;
-        .boxTitle {
-          margin: 0;
-          padding: 30px;
-          text-align: center;
-          font-size: 1.5em;
-          font-family: 'Permanent Marker', cursive;
-          color: white;
-          background-color: blue;
-        }
-        .boxContent {
-          margin: 80px 10%;
-          .emailText {
-            font-family: 'Permanent Marker', cursive;
-          }
-          #emailSymbol {
-            margin: 40px auto;
-            border: 3px solid black;
-            border-radius: 30px;
-            padding: 20px 10%;
-            font-size: 1.2em;
-            color: black;
+      #wrapBoxes {
+        display: block;
+        // @media screen and (min-width: 730px) {
+        //   display: flex;
+        //   flex-wrap: wrap;
+        // }
+        .contentBox {
+          margin: 20px 3%;
+          border: 3px dashed blue;
+          .boxTitle {
+            margin: 0;
+            padding: 30px;
             text-align: center;
-            text-decoration: none;
-            background-color: lightblue;
-            display: block;
-            width: 50%;
+            font-size: 1.5em;
+            font-family: 'Permanent Marker', cursive;
+            color: white;
+            background-color: blue;
           }
-          img {
-            width: 80%;
+          .boxContent {
+            margin: 80px 10%;
+            .emailText {
+              font-family: 'Permanent Marker', cursive;
+            }
+            #emailSymbol {
+              margin: 40px auto;
+              border: 3px solid black;
+              border-radius: 30px;
+              padding: 20px 10%;
+              font-size: 1.2em;
+              color: black;
+              text-align: center;
+              text-decoration: none;
+              background-color: lightblue;
+              display: block;
+              cursor: pointer;
+              width: 50%;
+            }
+            img {
+              width: 80%;
+            }
           }
         }
       }

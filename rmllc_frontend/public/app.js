@@ -8,6 +8,8 @@ $(()=>{
     'url("./stylesheets/img/hvac.jpg")'
   ];
 
+  const bodyWidth = $("body");
+
   // Auto slideshow on title
   var slideNum = 0;
   const changeSlide = () => {
