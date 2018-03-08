@@ -102,5 +102,12 @@ $(()=>{
     }, 400)
   };
   $("#contactButton").click(contactScroll)
+  //Scroll back to top of page
+  const toTop = () => {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 400)
+  };
+  $(".toTop").click(toTop);
 
 })
