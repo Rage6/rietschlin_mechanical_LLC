@@ -10,26 +10,36 @@ html {
     margin: 0;
     border: 0;
     padding: 0;
-    #title {
-      margin: 0;
-      background-image: url("./img/wwnurdem.bmp");
+    #backdrop {
+      background-image: url("http://www.facilityinnovationsgroup.com/wp-content/uploads/2016/07/new-construction-eletrical-services-v2.jpg");
       background-size: cover;
-      width: 100%;
-      #front {
-        background-color: rgba(255,255,255,1.0);
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-name: titleSlide;
-        @keyframes titleSlide {
-          0%   { background-color: rgba(255,255,255,1.0); }
-          10%  { background-color: rgba(255,255,255,0.6); }
-          90%  { background-color: rgba(255,255,255,0.6); }
-          100% { background-color: rgba(255,255,255,1.0); }
+      #title {
+        margin: 0;
+        background-image: url("./img/wwnurdem.bmp");
+        background-size: cover;
+        width: 100%;
+        @media screen and (min-width: 700px) {
+          margin: 0 auto;
+          border-left: 20px solid blue;
+          border-right: 20px solid blue;
+          width: 700px
         }
-        img {
-          opacity: 2;
-          margin: 100px 5%;
-          width: 90%;
+        #front {
+          background-color: rgba(255,255,255,1.0);
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          animation-name: titleSlide;
+          @keyframes titleSlide {
+            0%   { background-color: rgba(255,255,255,1.0); }
+            10%  { background-color: rgba(255,255,255,0.6); }
+            90%  { background-color: rgba(255,255,255,0.6); }
+            100% { background-color: rgba(255,255,255,1.0); }
+          }
+          img {
+            opacity: 2;
+            margin: 100px 5%;
+            width: 90%;
+          }
         }
       }
     }
@@ -113,7 +123,7 @@ html {
           font-size: 3rem;
           font-family: 'Permanent Marker', cursive;
           color: blue;
-          @media screen and (min-width: 1500px) {
+          @media screen and (min-width: 1080px) {
 
           }
         }
@@ -126,7 +136,7 @@ html {
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue;
-          @media screen and (min-width: 1500px) {
+          @media screen and (min-width: 1080px) {
             display: none;
           }
         }
@@ -139,7 +149,7 @@ html {
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue;
-          @media screen and (min-width: 1500px) {
+          @media screen and (min-width: 1080px) {
             display: block;
           }
         }
@@ -151,8 +161,56 @@ html {
         font-size: 3rem;
         ul {
           margin: 30px 10%;
+          font-family: sans-serif;
+          text-align: center;
+          list-style-type: none;
           li {
             margin: 10px 0;
+            .listBack {
+              background-color: rgba(255,255,255,0.6);
+            }
+            #elecBack {
+              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
+              background-size: cover;
+            }
+            #refBack {
+              background-image: url("https://thumb7.shutterstock.com/display_pic_with_logo/528559/528559,1278020454,4/stock-photo-surface-of-thick-ice-layer-on-lake-weathered-by-numerous-thaw-and-freeze-cycles-56361463.jpg");
+              background-size: content;
+            }
+            #heatBack {
+              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
+              background-size: cover;
+            }
+            #ventBack {
+              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
+              background-size: cover;
+            }
+            #acBack {
+              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
+              background-size: cover;
+            }
+          }
+        }
+        @media screen and (min-width: 1080px) {
+          padding: 40px 3%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          #introText {
+            // border: 1px solid red;
+            font-size: 2.5rem;
+            width: 45%;
+          }
+          ul {
+            margin: 0;
+            // border: 1px solid green;
+            width: 40%;
+            li {
+              // border: 1px solid red;
+              padding: 10px;
+              font-size: 2.1rem;
+              height: 11%;
+            }
           }
         }
       }
@@ -201,15 +259,12 @@ html {
                 margin-left: 45%;
                 width: 10%;
               }
+              img:hover {
+                cursor: pointer;
+              }
             }
           }
         }
-      }
-    }
-    @media screen and (min-width: 700px) {
-      #title {
-        margin: 0 auto;
-        width: 700px;
       }
     }
   }
