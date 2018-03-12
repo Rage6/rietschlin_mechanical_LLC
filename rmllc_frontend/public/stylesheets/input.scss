@@ -2,17 +2,16 @@ html {
   animation-name: htmlTop;
   animation-duration: 1s;
   animation-play-state: paused;
-  // @keyframes htmlTop {
-  //   0%   { top: 0px };
-  //   100% { top: 300px };
-  // }
   body {
     margin: 0;
     border: 0;
     padding: 0;
+    // font-size: 16px;
     #backdrop {
-      background-image: url("http://www.facilityinnovationsgroup.com/wp-content/uploads/2016/07/new-construction-eletrical-services-v2.jpg");
-      background-size: cover;
+      @media only screen and (min-width: 700px) {
+        background-image: url("http://www.facilityinnovationsgroup.com/wp-content/uploads/2016/07/new-construction-eletrical-services-v2.jpg");
+        background-size: cover;
+      }
       #title {
         margin: 0;
         background-image: url("./img/wwnurdem.bmp");
@@ -45,7 +44,7 @@ html {
     }
     #topMenu {
       color: white;
-      font-size: 3em;
+      font-size: 3rem;
       text-align: center;
       background-color: black;
       height: 80px;
@@ -120,7 +119,7 @@ html {
           border-collapse: collapse;
           border: 2px solid blue;
           padding: 30px 10px;
-          font-size: 3rem;
+          font-size: 4rem;
           font-family: 'Permanent Marker', cursive;
           color: blue;
           @media screen and (min-width: 1080px) {
@@ -132,7 +131,7 @@ html {
           border-collapse: collapse;
           border: 2px solid blue;
           padding: 30px 10px;
-          font-size: 3rem;
+          font-size: 4rem;
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue;
@@ -149,25 +148,26 @@ html {
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue;
-          @media screen and (min-width: 1080px) {
-            display: block;
-          }
         }
       }
       #intro {
         margin: 20px 1rem;
         border: 3px dashed blue;
-        padding: 80px 10%;
+        padding: 60px 10%;
         font-size: 3rem;
         ul {
-          margin: 30px 10%;
+          margin: 60px 10% 0px 10%;
           font-family: sans-serif;
           text-align: center;
           list-style-type: none;
           li {
             margin: 10px 0;
             .listBack {
-              background-color: rgba(255,255,255,0.6);
+              padding: 1rem 0;
+              color: white;
+              font-family: 'Nanum Gothic Coding', monospace;
+              background-color: black;
+              // background-color: rgba(255,255,255,0.6);
             }
             #elecBack {
               background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
@@ -202,14 +202,13 @@ html {
             width: 45%;
           }
           ul {
-            margin: 0;
-            // border: 1px solid green;
             width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             li {
-              // border: 1px solid red;
-              padding: 10px;
+              padding: none;
               font-size: 2.1rem;
-              height: 11%;
             }
           }
         }
