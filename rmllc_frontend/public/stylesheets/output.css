@@ -5,7 +5,8 @@ html {
   html body {
     margin: 0;
     border: 0;
-    padding: 0; }
+    padding: 0;
+    font-size: 16px; }
     @media only screen and (min-width: 700px) {
       html body #backdrop {
         background-image: url("http://www.facilityinnovationsgroup.com/wp-content/uploads/2016/07/new-construction-eletrical-services-v2.jpg");
@@ -65,7 +66,7 @@ html {
   0% {
     height: 0px; }
   100% {
-    height: 426px; } }
+    height: 355px; } }
       html body #allButtons .oneButton {
         border-bottom: 1px solid black;
         animation-duration: 0.4s;
@@ -94,17 +95,16 @@ html {
         border: 2px solid white;
         color: white; }
     html body #mainContent {
-      font-size: 16px; }
+      font-size: 2rem; }
       html body #mainContent table {
         margin: 0;
-        font-size: 4rem;
         text-align: center;
         width: 100%; }
         html body #mainContent table #problem {
           border-collapse: collapse;
           border: 2px solid blue;
           padding: 30px 10px;
-          font-size: 4rem;
+          font-size: 2.2rem;
           font-family: 'Permanent Marker', cursive;
           color: blue; }
         html body #mainContent table #solution1 {
@@ -112,7 +112,7 @@ html {
           border-collapse: collapse;
           border: 2px solid blue;
           padding: 30px 10px;
-          font-size: 4rem;
+          font-size: 2.2rem;
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue; }
@@ -124,42 +124,31 @@ html {
           padding: 30px 10px;
           border-collapse: collapse;
           border: 2px solid blue;
-          font-size: 3rem;
+          font-size: 2.2rem;
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue; }
+          @media screen and (min-width: 1080px) {
+            html body #mainContent table #solution2 {
+              display: block; } }
       html body #mainContent #intro {
-        margin: 20px 1rem;
+        margin: 20px 4%;
         border: 3px dashed blue;
         padding: 60px 10%;
-        font-size: 3rem; }
+        font-size: 2rem; }
         html body #mainContent #intro ul {
-          margin: 60px 10% 0px 10%;
+          margin: 60px 0% 0px 0%;
+          padding-left: 0;
           font-family: sans-serif;
           text-align: center;
           list-style-type: none; }
-          html body #mainContent #intro ul li {
-            margin: 10px 0; }
-            html body #mainContent #intro ul li .listBack {
-              padding: 1rem 0;
-              color: white;
-              font-family: 'Nanum Gothic Coding', monospace;
-              background-color: black; }
-            html body #mainContent #intro ul li #elecBack {
-              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
-              background-size: cover; }
-            html body #mainContent #intro ul li #refBack {
-              background-image: url("https://thumb7.shutterstock.com/display_pic_with_logo/528559/528559,1278020454,4/stock-photo-surface-of-thick-ice-layer-on-lake-weathered-by-numerous-thaw-and-freeze-cycles-56361463.jpg");
-              background-size: content; }
-            html body #mainContent #intro ul li #heatBack {
-              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
-              background-size: cover; }
-            html body #mainContent #intro ul li #ventBack {
-              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
-              background-size: cover; }
-            html body #mainContent #intro ul li #acBack {
-              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
-              background-size: cover; }
+          html body #mainContent #intro ul li .listBack {
+            margin: 10px auto;
+            padding: 1rem 0%;
+            color: white;
+            font-family: 'Nanum Gothic Coding', monospace;
+            background-color: black;
+            width: 100%; }
         @media screen and (min-width: 1080px) {
           html body #mainContent #intro {
             padding: 40px 3%;
@@ -178,7 +167,7 @@ html {
                 padding: none;
                 font-size: 2.1rem; } }
       html body #mainContent #wrapBoxes .mainBox {
-        margin: 20px 1rem 0px 1rem;
+        margin: 20px 4% 0px 4%;
         border: 3px dashed blue;
         border-top: none; }
         html body #mainContent #wrapBoxes .mainBox .boxTitle {
@@ -189,11 +178,12 @@ html {
           color: white;
           background-color: blue; }
         html body #mainContent #wrapBoxes .mainBox .boxContent {
-          margin: 80px 10% 20px 10%;
-          font-size: 2.5rem; }
+          margin: 60px 10% 10px 10%;
+          font-size: 1.6rem; }
           html body #mainContent #wrapBoxes .mainBox .boxContent .description {
             margin-bottom: 60px; }
           html body #mainContent #wrapBoxes .mainBox .boxContent .emailText {
+            font-size: 3rem;
             font-family: 'Permanent Marker', cursive; }
           html body #mainContent #wrapBoxes .mainBox .boxContent #emailSymbol {
             margin: 40px auto;

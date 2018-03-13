@@ -43,7 +43,6 @@ $(()=>{
   $('#hvacButton').click(dropMainMenu);
   $('#refButton').click(dropMainMenu);
   $('#contractButton').click(dropMainMenu);
-  $('#estimButton').click(dropMainMenu);
   $('#contactButton').click(dropMainMenu);
 
   // AUTO SCROLL DOWN
@@ -58,7 +57,6 @@ $(()=>{
   var hvacTop = $("#hvacBox").offset().top;
   var refTop  = $("#refBox").offset().top;
   var contractTop = $("#contractBox").offset().top;
-  var estimTop = $("#estimBox").offset().top;
   var contactTop = $("#contactBox").offset().top;
   // Scrolls to elecBox
   const elecScroll = () => {
@@ -88,18 +86,11 @@ $(()=>{
     }, 360)
   };
   $("#contractButton").click(contractScroll);
-  // Scroll to hvacBox
-  const estimScroll = () => {
-    $('html, body').animate({
-      scrollTop: estimTop
-    }, 380)
-  };
-  $("#estimButton").click(estimScroll);
-  // Scroll to hvacBox
+  // Scroll to contactBox
   const contactScroll = () => {
     $('html, body').animate({
       scrollTop: contactTop
-    }, 400)
+    }, 380)
   };
   $("#contactButton").click(contactScroll)
   //Scroll back to top of page
