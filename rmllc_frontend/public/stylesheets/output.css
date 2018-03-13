@@ -128,6 +128,9 @@ html {
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue; }
+          @media screen and (min-width: 1080px) {
+            html body #mainContent table #solution2 {
+              display: block; } }
       html body #mainContent #intro {
         margin: 20px 4%;
         border: 3px dashed blue;

@@ -147,6 +147,9 @@ html {
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue;
+          @media screen and (min-width: 1080px) {
+            display: block;
+          }
         }
       }
       #intro {
