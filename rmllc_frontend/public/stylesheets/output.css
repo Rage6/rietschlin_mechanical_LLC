@@ -1,3 +1,219 @@
-
+html {
+  animation-name: htmlTop;
+  animation-duration: 1s;
+  animation-play-state: paused; }
+  html body {
+    margin: 0;
+    border: 0;
+    padding: 0; }
+    @media only screen and (min-width: 700px) {
+      html body #backdrop {
+        background-image: url("http://www.facilityinnovationsgroup.com/wp-content/uploads/2016/07/new-construction-eletrical-services-v2.jpg");
+        background-size: cover; } }
+    html body #backdrop #title {
+      margin: 0;
+      background-image: url("./img/wwnurdem.bmp");
+      background-size: cover;
+      width: 100%; }
+      @media screen and (min-width: 700px) {
+        html body #backdrop #title {
+          margin: 0 auto;
+          border-left: 20px solid blue;
+          border-right: 20px solid blue;
+          width: 700px; } }
+      html body #backdrop #title #front {
+        background-color: white;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-name: titleSlide; }
+@keyframes titleSlide {
+  0% {
+    background-color: white; }
+  10% {
+    background-color: rgba(255, 255, 255, 0.6); }
+  90% {
+    background-color: rgba(255, 255, 255, 0.6); }
+  100% {
+    background-color: white; } }
+        html body #backdrop #title #front img {
+          opacity: 2;
+          margin: 100px 5%;
+          width: 90%; }
+    html body #topMenu {
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+      background-color: black;
+      height: 80px;
+      cursor: pointer; }
+      html body #topMenu #menuSymbol {
+        padding: auto 0; }
+    html body #allButtons {
+      margin: 0 10%;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      display: none;
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      background-color: lightgrey;
+      width: 80%;
+      animation-duration: 0.4s;
+      animation-name: open;
+      animation-play-state: paused; }
+@keyframes open {
+  0% {
+    height: 0px; }
+  100% {
+    height: 426px; } }
+      html body #allButtons .oneButton {
+        border-bottom: 1px solid black;
+        animation-duration: 0.4s;
+        animation-name: openButton;
+        animation-play-state: paused;
+        font-size: 2rem;
+        padding: 20px 0 0 0;
+        height: 50px; }
+@keyframes openButton {
+  0% {
+    font-size: 0rem;
+    padding: 0px;
+    height: 0px; }
+  100% {
+    font-size: 2rem;
+    padding: 20px 0 0 0;
+    height: 50px; } }
+      html body #allButtons a {
+        color: black;
+        text-decoration: none; }
+      html body #allButtons div:hover {
+        color: white;
+        background-color: darkgrey;
+        cursor: pointer; }
+      html body #allButtons div:active {
+        border: 2px solid white;
+        color: white; }
+    html body #mainContent {
+      font-size: 16px; }
+      html body #mainContent table {
+        margin: 0;
+        font-size: 4rem;
+        text-align: center;
+        width: 100%; }
+        html body #mainContent table #problem {
+          border-collapse: collapse;
+          border: 2px solid blue;
+          padding: 30px 10px;
+          font-size: 4rem;
+          font-family: 'Permanent Marker', cursive;
+          color: blue; }
+        html body #mainContent table #solution1 {
+          display: block;
+          border-collapse: collapse;
+          border: 2px solid blue;
+          padding: 30px 10px;
+          font-size: 4rem;
+          font-family: 'Permanent Marker', cursive;
+          color: white;
+          background-color: blue; }
+          @media screen and (min-width: 1080px) {
+            html body #mainContent table #solution1 {
+              display: none; } }
+        html body #mainContent table #solution2 {
+          display: none;
+          padding: 30px 10px;
+          border-collapse: collapse;
+          border: 2px solid blue;
+          font-size: 3rem;
+          font-family: 'Permanent Marker', cursive;
+          color: white;
+          background-color: blue; }
+      html body #mainContent #intro {
+        margin: 20px 1rem;
+        border: 3px dashed blue;
+        padding: 60px 10%;
+        font-size: 3rem; }
+        html body #mainContent #intro ul {
+          margin: 60px 10% 0px 10%;
+          font-family: sans-serif;
+          text-align: center;
+          list-style-type: none; }
+          html body #mainContent #intro ul li {
+            margin: 10px 0; }
+            html body #mainContent #intro ul li .listBack {
+              padding: 1rem 0;
+              color: white;
+              font-family: 'Nanum Gothic Coding', monospace;
+              background-color: black; }
+            html body #mainContent #intro ul li #elecBack {
+              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
+              background-size: cover; }
+            html body #mainContent #intro ul li #refBack {
+              background-image: url("https://thumb7.shutterstock.com/display_pic_with_logo/528559/528559,1278020454,4/stock-photo-surface-of-thick-ice-layer-on-lake-weathered-by-numerous-thaw-and-freeze-cycles-56361463.jpg");
+              background-size: content; }
+            html body #mainContent #intro ul li #heatBack {
+              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
+              background-size: cover; }
+            html body #mainContent #intro ul li #ventBack {
+              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
+              background-size: cover; }
+            html body #mainContent #intro ul li #acBack {
+              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
+              background-size: cover; }
+        @media screen and (min-width: 1080px) {
+          html body #mainContent #intro {
+            padding: 40px 3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; }
+            html body #mainContent #intro #introText {
+              font-size: 2.5rem;
+              width: 45%; }
+            html body #mainContent #intro ul {
+              width: 40%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between; }
+              html body #mainContent #intro ul li {
+                padding: none;
+                font-size: 2.1rem; } }
+      html body #mainContent #wrapBoxes .mainBox {
+        margin: 20px 1rem 0px 1rem;
+        border: 3px dashed blue;
+        border-top: none; }
+        html body #mainContent #wrapBoxes .mainBox .boxTitle {
+          padding: 30px;
+          text-align: center;
+          font-size: 3rem;
+          font-family: 'Permanent Marker', cursive;
+          color: white;
+          background-color: blue; }
+        html body #mainContent #wrapBoxes .mainBox .boxContent {
+          margin: 80px 10% 20px 10%;
+          font-size: 2.5rem; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent .description {
+            margin-bottom: 60px; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent .emailText {
+            font-family: 'Permanent Marker', cursive; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent #emailSymbol {
+            margin: 40px auto;
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 20px 10%;
+            font-size: 4rem;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            background-color: lightblue;
+            display: block;
+            cursor: pointer;
+            width: 50%; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent img {
+            width: 60%; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent .toTop img {
+            margin-left: 45%;
+            width: 10%; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent .toTop img:hover {
+            cursor: pointer; }
 
 /*# sourceMappingURL=output.css.map */
