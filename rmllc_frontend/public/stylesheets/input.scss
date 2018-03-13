@@ -6,7 +6,7 @@ html {
     margin: 0;
     border: 0;
     padding: 0;
-    // font-size: 16px;
+    font-size: 16px;
     #backdrop {
       @media only screen and (min-width: 700px) {
         background-image: url("http://www.facilityinnovationsgroup.com/wp-content/uploads/2016/07/new-construction-eletrical-services-v2.jpg");
@@ -68,7 +68,7 @@ html {
       animation-play-state: paused;
       @keyframes open {
         0% { height: 0px; }
-        100% { height: 426px }
+        100% { height: 355px }
       };
       .oneButton {
         border-bottom: 1px solid black;
@@ -106,10 +106,9 @@ html {
       }
     }
     #mainContent {
-      font-size: 16px;
+      font-size: 2rem;
       table {
         margin: 0;
-        font-size: 4rem;
         text-align: center;
         width: 100%;
         @media screen and (min-width: 1500px) {
@@ -119,7 +118,7 @@ html {
           border-collapse: collapse;
           border: 2px solid blue;
           padding: 30px 10px;
-          font-size: 4rem;
+          font-size: 2.2rem;
           font-family: 'Permanent Marker', cursive;
           color: blue;
           @media screen and (min-width: 1080px) {
@@ -131,7 +130,7 @@ html {
           border-collapse: collapse;
           border: 2px solid blue;
           padding: 30px 10px;
-          font-size: 4rem;
+          font-size: 2.2rem;
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue;
@@ -144,50 +143,31 @@ html {
           padding: 30px 10px;
           border-collapse: collapse;
           border: 2px solid blue;
-          font-size: 3rem;
+          font-size: 2.2rem;
           font-family: 'Permanent Marker', cursive;
           color: white;
           background-color: blue;
         }
       }
       #intro {
-        margin: 20px 1rem;
+        margin: 20px 4%;
         border: 3px dashed blue;
         padding: 60px 10%;
-        font-size: 3rem;
+        font-size: 2rem;
         ul {
-          margin: 60px 10% 0px 10%;
+          margin: 60px 0% 0px 0%;
+          padding-left: 0;
           font-family: sans-serif;
           text-align: center;
           list-style-type: none;
           li {
-            margin: 10px 0;
             .listBack {
-              padding: 1rem 0;
+              margin: 10px auto;
+              padding: 1rem 0%;
               color: white;
               font-family: 'Nanum Gothic Coding', monospace;
               background-color: black;
-              // background-color: rgba(255,255,255,0.6);
-            }
-            #elecBack {
-              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
-              background-size: cover;
-            }
-            #refBack {
-              background-image: url("https://thumb7.shutterstock.com/display_pic_with_logo/528559/528559,1278020454,4/stock-photo-surface-of-thick-ice-layer-on-lake-weathered-by-numerous-thaw-and-freeze-cycles-56361463.jpg");
-              background-size: content;
-            }
-            #heatBack {
-              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
-              background-size: cover;
-            }
-            #ventBack {
-              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
-              background-size: cover;
-            }
-            #acBack {
-              background-image: url("https://fthmb.tqn.com/atEFmAjmueGYHTa5bXHyqrdi9ao=/960x0/filters:no_upscale()/112296485-56a27fac5f9b58b7d0cb5854.jpg");
-              background-size: cover;
+              width: 100%;
             }
           }
         }
@@ -216,7 +196,7 @@ html {
       #wrapBoxes {
         // display: flex;
         .mainBox {
-          margin: 20px 1rem 0px 1rem;
+          margin: 20px 4% 0px 4%;
           border: 3px dashed blue;
           border-top: none;
           .boxTitle {
@@ -228,12 +208,13 @@ html {
             background-color: blue;
           }
           .boxContent {
-            margin: 80px 10% 20px 10%;
-            font-size: 2.5rem;
+            margin: 60px 10% 10px 10%;
+            font-size: 1.6rem;
             .description {
               margin-bottom: 60px;
             }
             .emailText {
+              font-size: 3rem;
               font-family: 'Permanent Marker', cursive;
             }
             #emailSymbol {
