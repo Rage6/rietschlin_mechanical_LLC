@@ -11,18 +11,19 @@ $(()=>{
   const bodyWidth = $("body");
 
   // Auto slideshow on title
-  var slideNum = 0;
-  const changeSlide = () => {
-    if (slideNum == 1) {
-      $('#title').css('background-image',allSlides[1]);
-      slideNum = 0
-    } else {
-      $('#title').css('background-image',allSlides[0]);
-      slideNum = 1
-    };
-    setTimeout(changeSlide, 5000);
-  };
-  changeSlide();
+  // var slideNum = 0;
+  // const changeSlide = () => {
+  //   if (slideNum == 1) {
+  //     $('#title').css('background-image',allSlides[1]);
+  //     slideNum = 0
+  //   } else {
+  //     $('#title').css('background-image',allSlides[0]);
+  //     slideNum = 1
+  //   };
+  //   setTimeout(changeSlide, 5000);
+  //
+  // };
+  // changeSlide();
 
   // causes gradual open/close of the main menu
   const dropMainMenu = () => {
