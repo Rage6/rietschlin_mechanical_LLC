@@ -13,6 +13,7 @@ $(()=>{
   // Auto slideshow on title
   var slideNum = 0;
   const changeSlide = () => {
+    $("#front").css('background-color', 'rgba(255,255,255,1.0)');
     if (slideNum == 1) {
       $('#title').css('background-image',allSlides[1]);
       slideNum = 0
@@ -21,6 +22,7 @@ $(()=>{
       slideNum = 1
     };
     setTimeout(changeSlide, 5000);
+
   };
   changeSlide();
 
