@@ -43,13 +43,16 @@ html {
             100% { background-color: rgba(255,255,255,1.0); }
           }
           height: 350px;
+          @media screen and (min-width: 700px) {
+            height: 500px;
+          }
         }
         img {
-          margin: 50px 5%;
+          margin: 30px 35px;
           z-index: 1;
           position: absolute;
           top: 0;
-          width: 90%;
+          width: 630px;
         }
       }
     }

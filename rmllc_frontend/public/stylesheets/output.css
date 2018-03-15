@@ -47,12 +47,15 @@ html {
     background-color: rgba(255, 255, 255, 0.7); }
   100% {
     background-color: white; } }
+        @media screen and (min-width: 700px) {
+          html body #backdrop #title #front {
+            height: 500px; } }
       html body #backdrop #title img {
-        margin: 50px 5%;
+        margin: 30px 35px;
         z-index: 1;
         position: absolute;
         top: 0;
-        width: 90%; }
+        width: 630px; }
     html body #topMenu {
       color: white;
       font-size: 3rem;
