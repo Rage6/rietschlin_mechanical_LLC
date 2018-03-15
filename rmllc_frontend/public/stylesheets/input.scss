@@ -14,31 +14,42 @@ html {
       }
       #title {
         margin: 0;
-        background-image: url("./img/wwnurdem.bmp");
+        animation-timing-function: steps(1);
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-name: bgSwitch;
+        @keyframes bgSwitch {
+          0% { background-image: url("./img/wwnurdem.bmp"); }
+          50% { background-image: url("./img/hvac.jpg"); }
+          100% { background-image: url("./img/wwnurdem.bmp"); }
+        }
         background-size: cover;
         width: 100%;
         @media screen and (min-width: 700px) {
           margin: 0 auto;
           border-left: 20px solid blue;
           border-right: 20px solid blue;
-          width: 700px
+          width: 700px;
         }
         #front {
           background-color: rgba(255,255,255,1.0);
           animation-duration: 5s;
           animation-iteration-count: infinite;
-          animation-name: titleSlide;
-          @keyframes titleSlide {
+          animation-name: titleFade;
+          @keyframes titleFade {
             0%   { background-color: rgba(255,255,255,1.0); }
-            10%  { background-color: rgba(255,255,255,0.6); }
-            90%  { background-color: rgba(255,255,255,0.6); }
+            10%  { background-color: rgba(255,255,255,0.7); }
+            90%  { background-color: rgba(255,255,255,0.7); }
             100% { background-color: rgba(255,255,255,1.0); }
           }
-          img {
-            opacity: 2;
-            margin: 100px 5%;
-            width: 90%;
-          }
+          height: 350px;
+        }
+        img {
+          margin: 50px 5%;
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          width: 90%;
         }
       }
     }

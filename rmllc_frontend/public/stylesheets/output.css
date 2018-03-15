@@ -13,9 +13,19 @@ html {
         background-size: cover; } }
     html body #backdrop #title {
       margin: 0;
-      background-image: url("./img/wwnurdem.bmp");
+      animation-timing-function: steps(1);
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-name: bgSwitch;
       background-size: cover;
       width: 100%; }
+@keyframes bgSwitch {
+  0% {
+    background-image: url("./img/wwnurdem.bmp"); }
+  50% {
+    background-image: url("./img/hvac.jpg"); }
+  100% {
+    background-image: url("./img/wwnurdem.bmp"); } }
       @media screen and (min-width: 700px) {
         html body #backdrop #title {
           margin: 0 auto;
@@ -26,20 +36,23 @@ html {
         background-color: white;
         animation-duration: 5s;
         animation-iteration-count: infinite;
-        animation-name: titleSlide; }
-@keyframes titleSlide {
+        animation-name: titleFade;
+        height: 350px; }
+@keyframes titleFade {
   0% {
     background-color: white; }
   10% {
-    background-color: rgba(255, 255, 255, 0.6); }
+    background-color: rgba(255, 255, 255, 0.7); }
   90% {
-    background-color: rgba(255, 255, 255, 0.6); }
+    background-color: rgba(255, 255, 255, 0.7); }
   100% {
     background-color: white; } }
-        html body #backdrop #title #front img {
-          opacity: 2;
-          margin: 100px 5%;
-          width: 90%; }
+      html body #backdrop #title img {
+        margin: 50px 5%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        width: 90%; }
     html body #topMenu {
       color: white;
       font-size: 3rem;
