@@ -9,23 +9,7 @@ $(()=>{
   ];
 
   const bodyWidth = $("body");
-
-  // Auto slideshow on title
-  // var slideNum = 0;
-  // const changeSlide = () => {
-  //   if (slideNum == 1) {
-  //     $('#title').css('background-image',allSlides[1]);
-  //     slideNum = 0
-  //   } else {
-  //     $('#title').css('background-image',allSlides[0]);
-  //     slideNum = 1
-  //   };
-  //   setTimeout(changeSlide, 5000);
-  //
-  // };
-  // changeSlide();
-
-  // causes gradual open/close of the main menu
+ 
   const dropMainMenu = () => {
     if (menuOpen == false) {
       $('#allButtons').css('display','block');
@@ -61,6 +45,7 @@ $(()=>{
   var contactTop = $("#contactBox").offset().top;
   // Scrolls to elecBox
   const elecScroll = () => {
+    elecTop = $("#elecBox").offset().top;
     $('html, body').animate({
       scrollTop: elecTop
     }, 300)
@@ -68,6 +53,7 @@ $(()=>{
   $("#elecButton").click(elecScroll);
   // Scroll to hvacBox
   const hvacScroll = () => {
+    hvacTop = $("#hvacBox").offset().top;
     $('html, body').animate({
       scrollTop: hvacTop
     }, 320)
@@ -75,6 +61,7 @@ $(()=>{
   $("#hvacButton").click(hvacScroll);
   // Scroll to refBox
   const refScroll = () => {
+    refTop  = $("#refBox").offset().top;
     $('html, body').animate({
       scrollTop: refTop
     }, 340)
@@ -82,6 +69,7 @@ $(()=>{
   $("#refButton").click(refScroll);
   // Scroll to contractBox
   const contractScroll = () => {
+    contractTop = $("#contractBox").offset().top;
     $('html, body').animate({
       scrollTop: contractTop
     }, 360)
@@ -89,6 +77,7 @@ $(()=>{
   $("#contractButton").click(contractScroll);
   // Scroll to contactBox
   const contactScroll = () => {
+    contactTop = $("#contactBox").offset().top;
     $('html, body').animate({
       scrollTop: contactTop
     }, 380)

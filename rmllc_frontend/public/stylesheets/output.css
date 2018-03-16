@@ -50,12 +50,18 @@ html {
         @media screen and (min-width: 700px) {
           html body #backdrop #title #front {
             height: 500px; } }
-      html body #backdrop #title img {
-        margin: 30px 35px;
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        width: 630px; }
+    html body #backdrop img {
+      margin: 50px 5%;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      width: 90%;
+      max-height: 260px; }
+      @media screen and (min-width: 700px) {
+        html body #backdrop img {
+          margin: 43px 50px;
+          max-height: 1000px;
+          width: 600px; } }
     html body #topMenu {
       color: white;
       font-size: 3rem;
@@ -155,19 +161,18 @@ html {
         html body #mainContent #intro ul {
           margin: 60px 0% 0px 0%;
           padding-left: 0;
-          font-family: sans-serif;
-          text-align: center;
-          list-style-type: none; }
-          html body #mainContent #intro ul li .listBack {
+          font-family: 'Permanent Marker', cursive;
+          text-align: left;
+          list-style: none; }
+          html body #mainContent #intro ul li .listBack::before {
+            content: "\2713\0020";
+            color: blue;
             margin: 10px auto;
             padding: 1rem 0%;
-            color: white;
-            font-family: 'Nanum Gothic Coding', monospace;
-            background-color: black;
             width: 100%; }
-        @media screen and (min-width: 1080px) {
+        @media screen and (min-width: 700px) {
           html body #mainContent #intro {
-            padding: 40px 3%;
+            padding: 40px 1% 40px 3%;
             display: flex;
             flex-direction: row;
             justify-content: space-around; }
@@ -175,6 +180,7 @@ html {
               font-size: 2.5rem;
               width: 45%; }
             html body #mainContent #intro ul {
+              margin: 0;
               width: 40%;
               display: flex;
               flex-direction: column;
