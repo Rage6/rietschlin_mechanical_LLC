@@ -3,7 +3,7 @@ html {
   animation-duration: 1s;
   animation-play-state: paused; }
   html body {
-    margin: 0;
+    margin: 0 0 30px 0;
     border: 0;
     padding: 0;
     font-size: 16px; }
@@ -247,24 +247,33 @@ html {
                 width: 30%;
                 max-width: 286px;
                 max-height: 286px; } }
-          html body #mainContent #wrapBoxes .mainBox .boxContent .emailText {
-            font-size: 3rem;
-            font-family: 'Permanent Marker', cursive; }
-          html body #mainContent #wrapBoxes .mainBox .boxContent #emailSymbol {
-            margin: 40px auto;
-            border: 3px solid black;
-            border-radius: 30px;
-            padding: 20px 10%;
-            font-size: 4rem;
-            color: black;
-            text-align: center;
-            text-decoration: none;
-            background-color: lightblue;
-            display: block;
-            cursor: pointer;
-            width: 50%; }
-          html body #mainContent #wrapBoxes .mainBox .boxContent img {
-            width: 60%; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox {
+            margin: 30px;
+            align-items: center; }
+            html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton {
+              margin: 0 auto;
+              border: 3px solid black;
+              border-radius: 30px;
+              padding: 20px 10%;
+              color: black;
+              text-align: center;
+              text-decoration: none;
+              background-color: lightblue;
+              cursor: pointer;
+              width: 50%; }
+              @media screen and (min-width: 700px) {
+                html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton {
+                  padding: 0;
+                  height: 220px;
+                  width: 220px; } }
+              html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton .emailText {
+                font-size: 3rem;
+                font-family: 'Permanent Marker', cursive; }
+                @media screen and (min-width: 700px) {
+                  html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton .emailText {
+                    font-size: 2rem; } }
+              html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton img {
+                width: 60%; }
           html body #mainContent #wrapBoxes .mainBox .boxContent .toTop img {
             margin-left: 45%;
             width: 10%;
