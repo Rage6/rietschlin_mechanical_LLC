@@ -9,7 +9,7 @@ $(()=>{
   ];
 
   const bodyWidth = $("body");
- 
+
   const dropMainMenu = () => {
     if (menuOpen == false) {
       $('#allButtons').css('display','block');
@@ -84,11 +84,11 @@ $(()=>{
   };
   $("#contactButton").click(contactScroll)
   //Scroll back to top of page
-  const toTop = () => {
+  const goUp = () => {
     $('html, body').animate({
       scrollTop: 0
     }, 400)
   };
-  $(".toTop").click(toTop);
+  $(".clickArrow").click(goUp);
 
 })
