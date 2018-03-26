@@ -1,7 +1,7 @@
-// console.log("app.js is functioning.")
 $(()=>{
 
   // Starting points for values
+
   var menuOpen = false;
   const allSlides = [
     'url("./stylesheets/img/wwnurdem.bmp")',
