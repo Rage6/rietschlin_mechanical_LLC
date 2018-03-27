@@ -29,8 +29,8 @@ html {
       @media screen and (min-width: 700px) {
         html body #backdrop #title {
           margin: 0 auto;
-          border-left: 20px solid blue;
-          border-right: 20px solid blue;
+          border-left: 2px solid blue;
+          border-right: 2px solid blue;
           width: 700px; } }
       html body #backdrop #title #front {
         background-color: white;
@@ -69,15 +69,26 @@ html {
             height: 290px; } }
         @media screen and (min-width: 415px) and (max-width: 480px) {
           html body #backdrop #title #front {
-            height: 340px; } }
-        @media screen and (min-width: 480px) and (max-width: 699px) {
+            height: 335px; } }
+        @media screen and (min-width: 481px) and (max-width: 533px) {
           html body #backdrop #title #front {
-            height: 500px; } }
+            height: 265px; } }
+        @media screen and (min-width: 534px) and (max-width: 568px) {
+          html body #backdrop #title #front {
+            height: 280px; } }
+        @media screen and (min-width: 569px) and (max-width: 600px) {
+          html body #backdrop #title #front {
+            height: 380px; } }
+        @media screen and (min-width: 601px) and (max-width: 640px) {
+          html body #backdrop #title #front {
+            height: 310px; } }
+        @media screen and (min-width: 641px) and (max-width: 699px) {
+          html body #backdrop #title #front {
+            height: 322px; } }
         @media screen and (min-width: 700px) {
           html body #backdrop #title #front {
             height: 500px; } }
       html body #backdrop #title #imgFrame {
-        border: 1px solid red;
         z-index: 1;
         position: absolute;
         top: 0;
@@ -85,9 +96,12 @@ html {
         transform: translate(-50%);
         vertical-align: middle;
         width: 80%; }
+        @media screen and (min-width: 700px) {
+          html body #backdrop #title #imgFrame {
+            height: 500px;
+            width: 700px; } }
         html body #backdrop #title #imgFrame img {
-          width: 100%;
-          max-height: 80%; }
+          width: 100%; }
           @media screen and (max-width: 176px) {
             html body #backdrop #title #imgFrame img {
               margin: 10px auto; } }
@@ -111,18 +125,30 @@ html {
               margin: 30px 0; } }
           @media screen and (min-width: 415px) and (max-width: 480px) {
             html body #backdrop #title #imgFrame img {
-              margin: 30px auto; } }
-          @media screen and (min-width: 480px) and (max-width: 699px) {
+              margin: 30px 0; } }
+          @media screen and (min-width: 481px) and (max-width: 533px) {
             html body #backdrop #title #imgFrame img {
-              margin: auto; } }
+              width: 80%;
+              margin: 10px 10%; } }
+          @media screen and (min-width: 534px) and (max-width: 568px) {
+            html body #backdrop #title #imgFrame img {
+              width: 80%;
+              margin: 10px 10%; } }
+          @media screen and (min-width: 569px) and (max-width: 600px) {
+            html body #backdrop #title #imgFrame img {
+              margin: 20px 0; } }
+          @media screen and (min-width: 601px) and (max-width: 640px) {
+            html body #backdrop #title #imgFrame img {
+              width: 80%;
+              margin: 10px 10%; } }
+          @media screen and (min-width: 641px) and (max-width: 667px) {
+            html body #backdrop #title #imgFrame img {
+              width: 80%;
+              margin: 10px 10%; } }
           @media screen and (min-width: 700px) {
             html body #backdrop #title #imgFrame img {
-              margin: 30px auto; } }
-          @media screen and (min-width: 700px) {
-            html body #backdrop #title #imgFrame img {
-              margin: 93px auto 95px auto;
-              max-height: 1000px;
-              width: 450px; } }
+              margin: 56px 10%;
+              width: 80%; } }
     html body #topMenu {
       color: white;
       text-align: center;
