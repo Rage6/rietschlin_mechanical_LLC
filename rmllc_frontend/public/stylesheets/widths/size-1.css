@@ -1,0 +1,22 @@
+
+/* 360px x 640px (Samsung Galaxy S2, LG G3-5 [phone]) */
+
+#front {
+  /* border: 1px solid green; */
+  height: 260px;
+}
+
+#imgFrame img {
+  margin: 25px 0;
+}
+
+#topMenu {
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.5rem;
+}
+
+.oneButton {
+  font-size: 1rem;
+  
+}
