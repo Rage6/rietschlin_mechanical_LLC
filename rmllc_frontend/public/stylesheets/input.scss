@@ -11,10 +11,15 @@
 $min-mid-width: 700px;
 $min-large-width: 1080px;
 
+// @import 'size-1';
+
 html {
   animation-name: htmlTop;
   animation-duration: 1s;
   animation-play-state: paused;
+
+  // @import 'size-1';
+
   body {
     margin: 0 0 30px 0;
     border: 0;
@@ -224,6 +229,7 @@ html {
         //   font-size: 300px;
         // }
         padding: 20px 0 0 0;
+        font-size: 2rem;
         height: 50px;
       }
       a {
@@ -411,9 +417,9 @@ html {
             font-family: 'Permanent Marker', cursive;
             color: white;
             background-color: blue;
-            @media screen and (max-width: 176px) {
-              font-size: 1rem;
-            }
+            // @media screen and (max-width: 176px) {
+            //   font-size: 1rem;
+            // }
             // @media screen and (min-width: 177px) and (max-width: 220px) {
             //   font-size: 200px;
             // }
@@ -539,10 +545,15 @@ html {
       }
     }
   }
+  @import 'size-1';
+  @import 'size-2';
+  @import 'size-3';
+  @import 'size-4';
+  @import 'size-5';
 }
 
 // ALL "SCREENFLY" DIMENSIONS:
-// -- Mobile            :  W   x  L
+// -- Mobile            :  W   x  H
 // Motorola RAZR V3m    : 176  x 220
 // Motorola RAZR V8     : 240  x 320
 // BlackBerry 8300      : 320  x 240
