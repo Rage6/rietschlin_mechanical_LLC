@@ -155,6 +155,7 @@ html {
       display: none;
       position: absolute;
       z-index: 1;
+      font-family: 'Permanent Marker', cursive;
       text-align: center;
       background-color: lightgrey;
       width: 80%;
@@ -376,6 +377,28 @@ html {
       line-height: 50px;
       font-size: 1.5rem; } }
   @media screen and (max-width: 360px) {
+    html body #allButtons {
+      height: 330px; }
+    @keyframes open {
+      0% {
+        height: 0px; }
+      100% {
+        height: 330px; } } }
+  @media screen and (max-width: 360px) and (max-width: 360px) {
+    html body #allButtons .oneButton {
+      padding: 15px 0 0 0;
+      font-size: 1.5rem; }
+    @keyframes openButton {
+      0% {
+        font-size: 0rem;
+        padding: 0px;
+        height: 0px; }
+      100% {
+        font-size: 1.5rem;
+        padding: 15px 0 0 0;
+        height: 50px; } } }
+
+  @media screen and (max-width: 360px) {
     html body #mainContent #intro {
       padding: 30px 10%; } }
   @media screen and (max-width: 360px) {
@@ -388,6 +411,9 @@ html {
   @media screen and (max-width: 360px) {
     html body #mainContent #wrapBoxes .mainBox .boxTitle {
       font-size: 2.2rem; } }
+  @media screen and (max-width: 360px) {
+    html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .description {
+      font-size: 1.3rem; } }
   @media screen and (max-width: 360px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .bottomImg {
       display: none; } }
