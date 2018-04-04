@@ -1,24 +1,21 @@
 // Top Common US Widths (px):
-//    W    x H    Model
-// 1) 1920 x 1080 (23" Desktop)
-// 2) 360  x 640  (Samsung Galaxy S2, LG G3-5 [phone])
-// 3) 375  x 667  (iPhone 6/7 [phone])
-// 4) 768  x 1366 (15" Notebook [tablet])
-// 5) 414  x 736  (iPhone 6/7 Plus [phone])
+//          W    x H     Model
+// _size-6: 1920 x 1080  (23" Desktop)
+// _size-1: 360  x 640   (Samsung Galaxy S2, LG G3-5 [phone])
+// _size-2: 375  x 667   (iPhone 6/7 [phone])
+// _size-5: 768  x 1366  (15" Notebook [laptop])
+// _size-3: 414  x 736   (iPhone 6/7 Plus [phone])
 // Resource: http://gs.statcounter.com/screen-resolution-stats/all/united-states-of-america
-// Smallest -> largest (vertical phones only): 360, 375, 414, 1366, 1920
+// Smallest -> largest (horiz. monitor and vert. phone only): 360, 375, 414, 1366, 1920
+// For #front reasons, another scale (415px -> 699px) was imported as _size-4
 
 $min-mid-width: 700px;
 $min-large-width: 1080px;
-
-// @import 'size-1';
 
 html {
   animation-name: htmlTop;
   animation-duration: 1s;
   animation-play-state: paused;
-
-  // @import 'size-1';
 
   body {
     margin: 0 0 30px 0;
@@ -60,6 +57,7 @@ html {
             90%  { background-color: rgba(255,255,255,0.7); }
             100% { background-color: rgba(255,255,255,1.0); }
           }
+          height: 500px;
         }
         #imgFrame {
           z-index: 1;
@@ -75,20 +73,10 @@ html {
           }
           img {
             width: 100%;
-            // @media screen and (max-width: 176px)                        {margin: 10px auto};
-            // @media screen and (min-width: 177px) and (max-width: 220px) {margin: 15px 0};
-            // @media screen and (min-width: 221px) and (max-width: 240px) {margin: 20px 0};
-            // @media screen and (min-width: 241px) and (max-width: 320px) {margin: 25px 0 0 0};
-            // @media screen and (min-width: 321px) and (max-width: 360px) {margin: 25px 0};
-            @media screen and (min-width: 361px) and (max-width: 375px) {margin: 30px 0};
-            @media screen and (min-width: 376px) and (max-width: 414px) {margin: 30px 0};
-            @media screen and (min-width: 415px) and (max-width: 480px) {margin: 30px 0};
-            @media screen and (min-width: 481px) and (max-width: 533px) {width: 80%; margin: 10px 10%};
-            @media screen and (min-width: 534px) and (max-width: 568px) {width: 80%; margin: 10px 10%};
-            @media screen and (min-width: 569px) and (max-width: 600px) {margin: 20px 0};
-            @media screen and (min-width: 601px) and (max-width: 640px) {width: 80%; margin: 10px 10%};
-            @media screen and (min-width: 641px) and (max-width: 699px) {width: 70%; margin: 20px 10%};
-            @media screen and (min-width: $min-mid-width) {margin: 56px 10%; width: 80%};
+            @media screen and (min-width: $min-mid-width) {
+              margin: 50px 10%;
+              width: 80%;
+            }
           }
         }
       }
@@ -98,76 +86,6 @@ html {
       text-align: center;
       background-color: black;
       vertical-align: middle;
-      // @media screen and (max-width: 176px) {
-      //   height: 40px;
-      //   line-height: 40px;
-      //   font-size: 1.4rem;
-      // }
-      // @media screen and (min-width: 177px) and (max-width: 220px) {
-      //   height: 50px;
-      //   line-height: 50px;
-      //   font-size: 1.5rem;
-      // }
-      // @media screen and (min-width: 221px) and (max-width: 240px) {
-      //   height: 50px;
-      //   line-height: 50px;
-      //   font-size: 1.5rem;
-      // };
-      // @media screen and (min-width: 241px) and (max-width: 320px) {
-      //   height: 50px;
-      //   line-height: 50px;
-      //   font-size: 1.5rem;
-      // };
-      // @media screen and (min-width: 321px) and (max-width: 360px) {
-      //   height: 50px;
-      //   line-height: 50px;
-      //   font-size: 1.5rem;
-      // };
-      @media screen and (min-width: 361px) and (max-width: 375px) {
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.5rem;
-      };
-      @media screen and (min-width: 376px) and (max-width: 414px) {
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.5rem;
-      };
-      @media screen and (min-width: 415px) and (max-width: 480px) {
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.5rem;
-      };
-      @media screen and (min-width: 481px) and (max-width: 533px) {
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.5rem;
-      };
-      @media screen and (min-width: 534px) and (max-width: 568px) {
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.5rem;
-      };
-      @media screen and (min-width: 569px) and (max-width: 600px) {
-        height: 60px;
-        line-height: 60px;
-        font-size: 1.9rem;
-      };
-      @media screen and (min-width: 601px) and (max-width: 640px) {
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.5rem;
-      };
-      @media screen and (min-width: 641px) and (max-width: 699px) {
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.5rem;
-      };
-      @media screen and (min-width: $min-mid-width) {
-        height: 70px;
-        line-height: 70px;
-        font-size: 2.3rem;
-      };
       cursor: pointer;
     }
     #allButtons {
@@ -204,31 +122,7 @@ html {
             padding: 20px 0 0 0;
             height: 50px;
           }
-        };
-        // @media screen and (max-width: 176px) {
-        //   font-size: 1rem;
-        // }
-        // @media screen and (min-width: 177px) and (max-width: 220px) {
-        //   font-size: 200px;
-        // }
-        // @media screen and (min-width: 221px) and (max-width: 240px) {
-        //   font-size: 300px;
-        // }
-        // @media screen and (min-width: 241px) and (max-width: 320px) {
-        //   font-size: 300px;
-        // }
-        // @media screen and (min-width: 321px) and (max-width: 360px) {
-        //   font-size: 300px;
-        // }
-        // @media screen and (min-width: 361px) and (max-width: 375px) {
-        //   font-size: 100px;
-        // }
-        // @media screen and (min-width: 376px) and (max-width: 414px) {
-        //   font-size: 200px;
-        // }
-        // @media screen and (min-width: 415px) and (max-width: 480px) {
-        //   font-size: 300px;
-        // }
+        }
         padding: 20px 0 0 0;
         font-size: 2rem;
         height: 50px;
@@ -254,30 +148,6 @@ html {
         text-align: center;
         font-size: 2.2rem;
         width: 100%;
-        @media screen and (max-width: 176px) {
-          font-size: 1rem;
-        }
-        // @media screen and (min-width: 177px) and (max-width: 220px) {
-        //   font-size: 1rem;
-        // }
-        // @media screen and (min-width: 221px) and (max-width: 240px) {
-        //   font-size: 300px;
-        // }
-        // @media screen and (min-width: 241px) and (max-width: 320px) {
-        //   font-size: 300px;
-        // }
-        // @media screen and (min-width: 321px) and (max-width: 360px) {
-        //   font-size: 300px;
-        // }
-        // @media screen and (min-width: 361px) and (max-width: 375px) {
-        //   font-size: 100px;
-        // }
-        // @media screen and (min-width: 376px) and (max-width: 414px) {
-        //   font-size: 200px;
-        // }
-        // @media screen and (min-width: 415px) and (max-width: 480px) {
-        //   font-size: 300px;
-        // }
         #problem {
           border-collapse: collapse;
           border: 2px solid blue;
@@ -318,30 +188,9 @@ html {
         border: 3px dashed blue;
         padding: 60px 10%;
         font-size: 2rem;
-        @media screen and (max-width: 176px) {
-          font-size: 1rem;
+        #introText {
+
         }
-        // @media screen and (min-width: 177px) and (max-width: 220px) {
-        //   font-size: 200px;
-        // }
-        // @media screen and (min-width: 221px) and (max-width: 240px) {
-        //   font-size: 300px;
-        // }
-        // @media screen and (min-width: 241px) and (max-width: 320px) {
-        //   font-size: 300px;
-        // }
-        // @media screen and (min-width: 321px) and (max-width: 360px) {
-        //   font-size: 300px;
-        // }
-        // @media screen and (min-width: 361px) and (max-width: 375px) {
-        //   font-size: 100px;
-        // }
-        // @media screen and (min-width: 376px) and (max-width: 414px) {
-        //   font-size: 200px;
-        // }
-        // @media screen and (min-width: 415px) and (max-width: 480px) {
-        //   font-size: 300px;
-        // }
         ul {
           margin: 60px 0% 0px 0%;
           padding-left: 0;
@@ -354,54 +203,6 @@ html {
               margin: 10px auto;
               padding: 1rem 0%;
               width: 100%;
-            }
-            @media screen and (max-width: 176px) {
-              font-size: 0.9rem;
-            }
-            // @media screen and (min-width: 177px) and (max-width: 220px) {
-            //   font-size: 200px;
-            // }
-            // @media screen and (min-width: 221px) and (max-width: 240px) {
-            //   font-size: 300px;
-            // }
-            // @media screen and (min-width: 241px) and (max-width: 320px) {
-            //   font-size: 300px;
-            // }
-            // @media screen and (min-width: 321px) and (max-width: 360px) {
-            //   font-size: 300px;
-            // }
-            // @media screen and (min-width: 361px) and (max-width: 375px) {
-            //   font-size: 100px;
-            // }
-            // @media screen and (min-width: 376px) and (max-width: 414px) {
-            //   font-size: 200px;
-            // }
-            // @media screen and (min-width: 415px) and (max-width: 480px) {
-            //   font-size: 300px;
-            // }
-          }
-        }
-        @media screen and (min-width: $min-mid-width) {
-          padding: 40px 1% 40px 3%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          #introText {
-            font-size: 2.5rem;
-            width: 45%;
-          }
-          ul {
-            margin: 0;
-            width: 40%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            li {
-              padding: none;
-              font-size: 2.1rem;
-              // @media screen and (max-width: 895px) {
-              //   font-size: 1.5rem;
-              // }
             }
           }
         }
@@ -418,30 +219,6 @@ html {
             font-family: 'Permanent Marker', cursive;
             color: white;
             background-color: blue;
-            // @media screen and (max-width: 176px) {
-            //   font-size: 1rem;
-            // }
-            // @media screen and (min-width: 177px) and (max-width: 220px) {
-            //   font-size: 200px;
-            // }
-            // @media screen and (min-width: 221px) and (max-width: 240px) {
-            //   font-size: 300px;
-            // }
-            // @media screen and (min-width: 241px) and (max-width: 320px) {
-            //   font-size: 300px;
-            // }
-            // @media screen and (min-width: 321px) and (max-width: 360px) {
-            //   font-size: 300px;
-            // }
-            // @media screen and (min-width: 361px) and (max-width: 375px) {
-            //   font-size: 100px;
-            // }
-            // @media screen and (min-width: 376px) and (max-width: 414px) {
-            //   font-size: 200px;
-            // }
-            // @media screen and (min-width: 415px) and (max-width: 480px) {
-            //   font-size: 300px;
-            // }
           }
           .boxContent {
             margin: 40px 10% 10px 10%;
@@ -513,7 +290,6 @@ html {
                   cursor: pointer;
                   width: 50%;
                   @media screen and (min-width: $min-mid-width) {
-                    padding: 0;
                     height: 220px;
                     width: 220px;
                   }
@@ -526,6 +302,9 @@ html {
                   }
                   img {
                     width: 60%;
+                    @media screen and (min-width: $min-mid-width) {
+                      margin-top: 40px;
+                    }
                   }
                 }
               }
@@ -551,6 +330,7 @@ html {
   @import 'size-3';
   @import 'size-4';
   @import 'size-5';
+  @import 'size-6';
 }
 
 // ALL "SCREENFLY" DIMENSIONS:
