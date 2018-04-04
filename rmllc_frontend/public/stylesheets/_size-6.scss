@@ -1,0 +1,145 @@
+/* 1920 x 1080 (23" Desktop) */
+
+$min-width: 1367px;
+
+body {
+  #backdrop {
+    #title {
+      #front {
+
+      }
+      #imgFrame {
+        img {
+
+        }
+      }
+    }
+  }
+  #topMenu {
+    @media screen and (min-width: $min-width) {
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.5rem;
+    }
+  }
+  #allButtons {
+    @media screen and (min-width: $min-width) {
+      @keyframes open {
+        0% { height: 0px; }
+        100% { height: 330px }
+      }
+      .oneButton {
+        @media screen and (min-width: $min-width) {
+          @keyframes openButton {
+            0% {
+              font-size: 0rem;
+              padding: 0px;
+              height: 0px;
+            }
+            100% {
+              font-size: 1.5rem;
+              padding: 15px 0 0 0;
+              height: 50px;
+            }
+          }
+        padding: 15px 0 0 0;
+        font-size: 1.5rem;
+        }
+      }
+      height: 330px;
+    }
+  }
+  #mainContent {
+    table {
+      tr {
+        #problem {
+
+        }
+        #solution1 {
+
+        }
+        #solution2 {
+
+        }
+      }
+    }
+    #intro {
+      @media screen and (min-width: $min-width) {
+        padding: 40px 1% 40px 3%;
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      #introText {
+        @media screen and (min-width: $min-width) {
+          width: 50%;
+        }
+      }
+      ul {
+        @media screen and (min-width: $min-width) {
+          margin: 0px 0%;
+          padding-left: 0;
+          font-family: 'Permanent Marker', cursive;
+          text-align: left;
+          list-style: none;
+        }
+        li {
+          .listBack::before {
+            @media screen and (min-width: $min-width) {
+              content: "\2713\0020"; color: blue;
+              margin: 10px auto;
+              padding: 1rem 0%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    #wrapBoxes {
+      .mainBox {
+        .boxTitle {
+          @media screen and (min-width: $min-width) {
+            font-size: 2.2rem;
+          }
+        }
+        .boxContent {
+          .flexBox {
+            .topImg {
+
+            }
+            .description {
+              @media screen and (min-width: $min-width) {
+                font-size: 1.5rem;
+              }
+            }
+            .bottomImg {
+              @media screen and (min-width: $min-width) {
+                display: inherit;
+              }
+            }
+
+            #emailIntro {
+              @media screen and (min-width: $min-width) {
+                padding-right: 5%;
+                font-size: 1.9rem;
+              }
+            }
+            #emailBox {
+
+              #emailButton {
+
+                .emailText {
+
+                }
+                img {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
