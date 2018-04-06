@@ -1,5 +1,0 @@
-Heroku URL: https://rietschlin-mechanical-llc.herokuapp.com
-
-- Google Analytics
-Tracking ID: UA-117114852-1
-Acct. Name: rietschlin-mechanical-llc
