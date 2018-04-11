@@ -31,7 +31,7 @@ body {
     @media screen and (min-width: $min-width) and (max-width: $max-width) {
       @keyframes open {
         0% { height: 0px; }
-        100% { height: 354px }
+        100% { height: 413px }
       }
       .oneButton {
         @media screen and (min-width: $min-width) and (max-width: $max-width) {
@@ -52,7 +52,7 @@ body {
         height: 45px;
         }
       }
-      height: 354px;
+      height: 413px;
     }
   }
   #mainContent {
@@ -104,7 +104,7 @@ body {
             }
             .description {
               @media screen and (min-width: $min-width) and (max-width: $max-width) {
-                font-size: 1.5rem; 
+                font-size: 1.5rem;
               }
             }
             .bottomImg {
