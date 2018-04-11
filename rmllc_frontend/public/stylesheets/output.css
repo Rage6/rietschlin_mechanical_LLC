@@ -14,7 +14,7 @@ html {
     font-size: 16px; }
     @media only screen and (min-width: 700px) {
       html body #backdrop {
-        background-image: url("http://www.facilityinnovationsgroup.com/wp-content/uploads/2016/07/new-construction-eletrical-services-v2.jpg");
+        background-image: url("img/desk_background.jpg");
         background-size: cover; } }
     html body #backdrop #title {
       margin: 0;
@@ -189,21 +189,8 @@ html {
         html body #mainContent #wrapBoxes .mainBox .boxContent {
           margin: 40px 10% 10px 10%;
           font-size: 1.6rem; }
-          @media screen and (min-width: 700px) {
-            html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: space-around; } }
           html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .description {
             margin-bottom: 30px; }
-            @media screen and (min-width: 700px) {
-              html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .description {
-                width: 50%; } }
-            @media screen and (min-width: 1250px) {
-              html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .description {
-                padding: 0 40px;
-                width: 40%; } }
           html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox img {
             vertical-align: middle;
             width: 100%; }
@@ -233,27 +220,25 @@ html {
                 width: 30%;
                 max-width: 286px;
                 max-height: 286px; } }
-          html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox {
-            align-items: center; }
-            html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton {
-              margin: 0 auto;
-              border: 3px solid black;
-              border-radius: 30px;
-              padding: 20px 10%;
-              text-align: center;
-              background-color: lightblue;
-              cursor: pointer; }
-              html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton img {
-                width: 60%; }
-            html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton:hover {
-              background-color: blue; }
-            html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 {
-              margin: 20px 0 40px 0;
-              text-align: center; }
-              html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 #italic {
-                font-size: 1rem; }
-              html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 #underline {
-                font-size: 1rem; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton {
+            margin: 0 auto;
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 20px 10%;
+            text-align: center;
+            background-color: lightblue;
+            cursor: pointer; }
+            html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton img {
+              width: 60%; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton:hover {
+            background-color: blue; }
+          html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 {
+            margin: 20px 0 40px 0;
+            text-align: center; }
+            html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 #italic {
+              display: block; }
+            html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 #underline {
+              display: block; }
           html body #mainContent #wrapBoxes .mainBox .boxContent .toTop {
             margin-top: 80px; }
             html body #mainContent #wrapBoxes .mainBox .boxContent .toTop img {
@@ -480,7 +465,7 @@ html {
       font-size: 2.2rem; } }
   @media screen and (min-width: 415px) and (max-width: 699px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .description {
-      font-size: 1.3rem; } }
+      font-size: 1.5rem; } }
   @media screen and (min-width: 415px) and (max-width: 699px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .bottomImg {
       display: none; } }
@@ -548,23 +533,28 @@ html {
     html body #mainContent #wrapBoxes .mainBox .boxTitle {
       font-size: 2.2rem; } }
   @media screen and (min-width: 700px) and (max-width: 1366px) {
+    html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; } }
+  @media screen and (min-width: 700px) and (max-width: 1366px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .description {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      width: 40%; } }
   @media screen and (min-width: 700px) and (max-width: 1366px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .bottomImg {
       display: none; } }
   @media screen and (min-width: 700px) and (max-width: 1366px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailIntro {
-      padding-right: 5%;
-      font-size: 1.7rem; } }
-  html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 {
-    display: block;
-    margin: 20px 0 40px 0;
-    display: block;
-    text-align: center;
-    font-size: 1.3rem; }
-  html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailAddress-1 {
-    display: none; }
+      width: 90%;
+      padding: 0 5%;
+      font-size: 1.8rem; } }
+  @media screen and (min-width: 700px) and (max-width: 1366px) {
+    html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 {
+      margin: 20px 0;
+      text-align: center;
+      font-size: 1.3rem; } }
   @media screen and (min-width: 1367px) {
     html body #topMenu {
       height: 50px;
@@ -621,26 +611,30 @@ html {
     html body #mainContent #wrapBoxes .mainBox .boxTitle {
       font-size: 2.2rem; } }
   @media screen and (min-width: 1367px) {
+    html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; } }
+  @media screen and (min-width: 1367px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .description {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      width: 40%; } }
   @media screen and (min-width: 1367px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .bottomImg {
       display: inherit; } }
   @media screen and (min-width: 1367px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailIntro {
-      width: 60%;
-      padding-right: 5%;
-      font-size: 3rem; } }
+      width: 90%;
+      padding: 0 5%;
+      font-size: 2.2rem; } }
   @media screen and (min-width: 1367px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox {
-      width: 40%; }
-      html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 {
-        display: block;
-        margin: 20px 0 40px 0;
-        display: block;
-        text-align: center;
-        font-size: 1.3rem; } }
-  html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-1 {
-    display: none; }
+      width: 100%; } }
+  @media screen and (min-width: 1367px) {
+    html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailAddress-2 {
+      margin: 20px 0 20px 0;
+      text-align: center;
+      font-size: 2rem; } }
 
 /*# sourceMappingURL=output.css.map */

@@ -24,7 +24,7 @@ html {
     font-size: 16px;
     #backdrop {
       @media only screen and (min-width: $min-mid-width) {
-        background-image: url("http://www.facilityinnovationsgroup.com/wp-content/uploads/2016/07/new-construction-eletrical-services-v2.jpg");
+        background-image: url("img/desk_background.jpg");
         background-size: cover;
       }
       #title {
@@ -225,21 +225,18 @@ html {
             margin: 40px 10% 10px 10%;
             font-size: 1.6rem;
             .flexBox {
-              @media screen and (min-width: $min-mid-width) {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-around;
-              }
+              // @media screen and (min-width: $min-mid-width) {
+              //   display: flex;
+              //   flex-direction: row;
+              //   align-items: center;
+              //   justify-content: space-around;
+              // }
               .description {
                 margin-bottom: 30px;
-                @media screen and (min-width: $min-mid-width) {
-                  width: 50%;
-                }
-                @media screen and (min-width: 1250px) {
-                  padding: 0 40px;
-                  width: 40%;
-                }
+                // @media screen and (min-width: 1250px) {
+                //   padding: 0 40px;
+                //   width: 40%;
+                // }
               }
               img {
                 vertical-align: middle;
@@ -278,7 +275,6 @@ html {
 
               }
               #emailBox {
-                align-items: center;
                 #emailButton {
                   margin: 0 auto;
                   border: 3px solid black;
@@ -298,16 +294,13 @@ html {
                   margin: 20px 0 40px 0;
                   text-align: center;
                   #italic {
-                    font-size: 1rem;
+                    display: block;
                   }
                   #underline {
-                    font-size: 1rem;
+                    display: block;
                   }
                 }
               }
-              // #emailAddress-1 {
-              //
-              // }
             }
             .toTop {
               margin-top: 80px;

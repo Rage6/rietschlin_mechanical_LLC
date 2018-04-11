@@ -27,6 +27,7 @@ $(()=>{
   $('#electricalButton').click(dropMainMenu);
   $('#heating-ac-Button').click(dropMainMenu);
   $('#refrigeration-Button').click(dropMainMenu);
+  $('#bucket-Button').click(dropMainMenu);
   $('#contractButton').click(dropMainMenu);
   $('#aboutUsButton').click(dropMainMenu);
   $('#contactButton').click(dropMainMenu);
@@ -42,6 +43,7 @@ $(()=>{
   var elecTop = $("#electricalBox").offset().top;
   var hvacTop = $("#heating-ac-Box").offset().top;
   var refTop  = $("#refrigeration-Box").offset().top;
+  var bucketTop = $("#bucket-Box").offset().top;
   var contractTop = $("#contractBox").offset().top;
   var aboutUsTop = $("#aboutUsBox").offset().top;
   var contactTop = $("#contactBox").offset().top;
@@ -69,6 +71,14 @@ $(()=>{
     }, 340)
   };
   $("#refrigeration-Button").click(refScroll);
+  // Scroll to bucket-Box
+  const bucketScroll = () => {
+    bucketTop = $("#bucket-Box").offset().top;
+    $('html, body').animate({
+      scrollTop: bucketTop
+    }, 340)
+  };
+  $("#bucket-Button").click(bucketScroll);
   // Scroll to contractBox
   const contractScroll = () => {
     contractTop = $("#contractBox").offset().top;

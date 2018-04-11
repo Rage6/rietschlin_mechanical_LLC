@@ -106,12 +106,19 @@ body {
         }
         .boxContent {
           .flexBox {
+            @media screen and (min-width: $min-width) and (max-width: $max-width) {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-around;
+            }
             .topImg {
 
             }
             .description {
               @media screen and (min-width: $min-width) and (max-width: $max-width) {
                 font-size: 1.5rem;
+                width: 40%;
               }
             }
             .bottomImg {
@@ -121,27 +128,30 @@ body {
             }
             #emailIntro {
               @media screen and (min-width: $min-width) and (max-width: $max-width) {
-                padding-right: 5%;
-                font-size: 1.7rem;
+                width: 90%;
+                padding: 0 5%;
+                font-size: 1.8rem;
               }
             }
             #emailBox {
-
               #emailButton {
                 img {
 
                 }
               }
               #emailAddress-2 {
-                display: block;
-                margin: 20px 0 40px 0;
-                display: block;
-                text-align: center;
-                font-size: 1.3rem;
+                @media screen and (min-width: $min-width) and (max-width: $max-width) {
+                  margin: 20px 0;
+                  text-align: center;
+                  font-size: 1.3rem;
+                }
+                #italic {
+
+                }
+                #underline {
+
+                }
               }
-            }
-            #emailAddress-1 {
-              display: none;
             }
           }
         }
