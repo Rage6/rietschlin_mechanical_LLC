@@ -24,10 +24,12 @@ $(()=>{
     }
   }
   $("#topMenu").click(dropMainMenu);
-  $('#elecButton').click(dropMainMenu);
-  $('#hvacButton').click(dropMainMenu);
-  $('#refButton').click(dropMainMenu);
+  $('#electricalButton').click(dropMainMenu);
+  $('#heating-ac-Button').click(dropMainMenu);
+  $('#refrigeration-Button').click(dropMainMenu);
+  $('#bucket-Button').click(dropMainMenu);
   $('#contractButton').click(dropMainMenu);
+  $('#aboutUsButton').click(dropMainMenu);
   $('#contactButton').click(dropMainMenu);
 
   // AUTO SCROLL DOWN
@@ -38,35 +40,45 @@ $(()=>{
     return currentTop
   })
   // The top's of the content boxes
-  var elecTop = $("#elecBox").offset().top;
-  var hvacTop = $("#hvacBox").offset().top;
-  var refTop  = $("#refBox").offset().top;
+  var elecTop = $("#electricalBox").offset().top;
+  var hvacTop = $("#heating-ac-Box").offset().top;
+  var refTop  = $("#refrigeration-Box").offset().top;
+  var bucketTop = $("#bucket-Box").offset().top;
   var contractTop = $("#contractBox").offset().top;
+  var aboutUsTop = $("#aboutUsBox").offset().top;
   var contactTop = $("#contactBox").offset().top;
-  // Scrolls to elecBox
+  // Scrolls to electricalBox
   const elecScroll = () => {
-    elecTop = $("#elecBox").offset().top;
+    elecTop = $("#electricalBox").offset().top;
     $('html, body').animate({
       scrollTop: elecTop
     }, 300)
   };
-  $("#elecButton").click(elecScroll);
-  // Scroll to hvacBox
+  $("#electricalButton").click(elecScroll);
+  // Scroll to heating-ac-Box
   const hvacScroll = () => {
-    hvacTop = $("#hvacBox").offset().top;
+    hvacTop = $("#heating-ac-Box").offset().top;
     $('html, body').animate({
       scrollTop: hvacTop
     }, 320)
   };
-  $("#hvacButton").click(hvacScroll);
-  // Scroll to refBox
+  $("#heating-ac-Button").click(hvacScroll);
+  // Scroll to refrigeration-Box
   const refScroll = () => {
-    refTop  = $("#refBox").offset().top;
+    refTop  = $("#refrigeration-Box").offset().top;
     $('html, body').animate({
       scrollTop: refTop
     }, 340)
   };
-  $("#refButton").click(refScroll);
+  $("#refrigeration-Button").click(refScroll);
+  // Scroll to bucket-Box
+  const bucketScroll = () => {
+    bucketTop = $("#bucket-Box").offset().top;
+    $('html, body').animate({
+      scrollTop: bucketTop
+    }, 340)
+  };
+  $("#bucket-Button").click(bucketScroll);
   // Scroll to contractBox
   const contractScroll = () => {
     contractTop = $("#contractBox").offset().top;
@@ -75,19 +87,27 @@ $(()=>{
     }, 360)
   };
   $("#contractButton").click(contractScroll);
+  // Scroll to aboutUsBox
+  const aboutUsScroll = () => {
+    aboutUsTop = $("#aboutUsBox").offset().top;
+    $('html, body').animate({
+      scrollTop: aboutUsTop
+    }, 380)
+  };
+  $("#aboutUsButton").click(aboutUsScroll);
   // Scroll to contactBox
   const contactScroll = () => {
     contactTop = $("#contactBox").offset().top;
     $('html, body').animate({
       scrollTop: contactTop
-    }, 380)
+    }, 400)
   };
   $("#contactButton").click(contactScroll)
   //Scroll back to top of page
   const goUp = () => {
     $('html, body').animate({
       scrollTop: 0
-    }, 400)
+    }, 420)
   };
   $(".clickArrow").click(goUp);
 

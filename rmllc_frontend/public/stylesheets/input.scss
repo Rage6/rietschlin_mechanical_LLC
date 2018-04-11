@@ -24,7 +24,7 @@ html {
     font-size: 16px;
     #backdrop {
       @media only screen and (min-width: $min-mid-width) {
-        background-image: url("http://www.facilityinnovationsgroup.com/wp-content/uploads/2016/07/new-construction-eletrical-services-v2.jpg");
+        background-image: url("img/desk_background.jpg");
         background-size: cover;
       }
       #title {
@@ -102,9 +102,10 @@ html {
       animation-duration: 0.4s;
       animation-name: open;
       animation-play-state: paused;
+      height: 354px;
       @keyframes open {
         0% { height: 0px; }
-        100% { height: 355px }
+        100% { height: 354px}
       };
       .oneButton {
         border-bottom: 1px solid black;
@@ -119,13 +120,13 @@ html {
           }
           100% {
             font-size: 2rem;
-            padding: 20px 0 0 0;
-            height: 50px;
+            padding: 13px 0 0 0;
+            height: 45px;
           }
         }
-        padding: 20px 0 0 0;
+        padding: 13px 0 0 0;
         font-size: 2rem;
-        height: 50px;
+        height: 45px;
       }
       a {
         color: black;
@@ -224,21 +225,18 @@ html {
             margin: 40px 10% 10px 10%;
             font-size: 1.6rem;
             .flexBox {
-              @media screen and (min-width: $min-mid-width) {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-              }
+              // @media screen and (min-width: $min-mid-width) {
+              //   display: flex;
+              //   flex-direction: row;
+              //   align-items: center;
+              //   justify-content: space-around;
+              // }
               .description {
                 margin-bottom: 30px;
-                @media screen and (min-width: $min-mid-width) {
-                  width: 50%;
-                }
-                @media screen and (min-width: 1250px) {
-                  padding: 0 40px;
-                  width: 40%;
-                }
+                // @media screen and (min-width: 1250px) {
+                //   padding: 0 40px;
+                //   width: 40%;
+                // }
               }
               img {
                 vertical-align: middle;
@@ -272,44 +270,40 @@ html {
                   max-height: 286px;
                 }
               }
+
               #emailIntro {
 
               }
               #emailBox {
-                margin: 30px;
-                align-items: center;
                 #emailButton {
                   margin: 0 auto;
                   border: 3px solid black;
                   border-radius: 30px;
                   padding: 20px 10%;
-                  color: black;
                   text-align: center;
-                  text-decoration: none;
                   background-color: lightblue;
                   cursor: pointer;
-                  width: 50%;
-                  @media screen and (min-width: $min-mid-width) {
-                    height: 220px;
-                    width: 220px;
-                  }
-                  .emailText {
-                    font-size: 3rem;
-                    font-family: 'Permanent Marker', cursive;
-                    @media screen and (min-width: $min-mid-width) {
-                      font-size: 2rem;
-                    }
-                  }
                   img {
                     width: 60%;
-                    @media screen and (min-width: $min-mid-width) {
-                      margin-top: 40px;
-                    }
+                  }
+                }
+                #emailButton:hover {
+                  background-color: blue;
+                }
+                #emailAddress-2 {
+                  margin: 20px 0 40px 0;
+                  text-align: center;
+                  #italic {
+                    display: block;
+                  }
+                  #underline {
+                    display: block;
                   }
                 }
               }
             }
             .toTop {
+              margin-top: 80px;
               img {
                 margin-left: 45%;
                 width: 10%;
