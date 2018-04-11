@@ -26,7 +26,7 @@ body {
     @media screen and (min-width: $min-width) {
       @keyframes open {
         0% { height: 0px; }
-        100% { height: 396px }
+        100% { height: 354px }
       }
       .oneButton {
         @media screen and (min-width: $min-width) {
@@ -38,15 +38,16 @@ body {
             }
             100% {
               font-size: 1.5rem;
-              padding: 15px 0 0 0;
-              height: 50px;
+              padding: 13px 0 0 0;
+              height: 45px;
             }
           }
-        padding: 15px 0 0 0;
+        padding: 13px 0 0 0;
         font-size: 1.5rem;
+        height: 45px;
         }
       }
-      height: 396px;
+      height: 354px;
     }
   }
   #mainContent {
@@ -110,7 +111,7 @@ body {
             }
             .description {
               @media screen and (min-width: $min-width) {
-                font-size: 1.5rem;
+                font-size: 2rem;
               }
             }
             .bottomImg {
@@ -118,27 +119,31 @@ body {
                 display: inherit;
               }
             }
-
             #emailIntro {
               @media screen and (min-width: $min-width) {
+                width: 60%;
                 padding-right: 5%;
-                font-size: 1.9rem;
-                #emailAddress {
-                  margin-top: 40px;
-                  font-size: 2.5rem;
-                }
+                font-size: 3rem;
               }
             }
             #emailBox {
+              @media screen and (min-width: $min-width) {
+                width: 40%;
+                #emailButton {
+                  img {
 
-              #emailButton {
-
-                .emailText {
-
+                  }
                 }
-                img {
-
+                #emailAddress-2 {
+                  display: block;
+                  margin: 20px 0 40px 0;
+                  display: block;
+                  text-align: center;
+                  font-size: 1.3rem;
                 }
+              }
+              #emailAddress-1 {
+                display: none;
               }
             }
           }
