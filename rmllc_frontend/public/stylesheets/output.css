@@ -94,7 +94,7 @@ html {
   0% {
     height: 0px; }
   100% {
-    height: 355px; } }
+    height: 425px; } }
       html body #allButtons .oneButton {
         border-bottom: 1px solid black;
         animation-duration: 0.4s;
@@ -283,7 +283,7 @@ html {
       font-size: 1.5rem; } }
   @media screen and (max-width: 360px) {
     html body #allButtons {
-      height: 330px; }
+      height: 396px; }
     @keyframes open {
       0% {
         height: 0px; }
@@ -340,12 +340,12 @@ html {
       font-size: 1.5rem; } }
   @media screen and (min-width: 361px) and (max-width: 375px) {
     html body #allButtons {
-      height: 330px; }
+      height: 396px; }
     @keyframes open {
       0% {
         height: 0px; }
       100% {
-        height: 330px; } } }
+        height: 396px; } } }
   @media screen and (min-width: 361px) and (max-width: 375px) and (min-width: 361px) and (max-width: 375px) {
     html body #allButtons .oneButton {
       padding: 15px 0 0 0;
@@ -392,12 +392,12 @@ html {
       font-size: 1.5rem; } }
   @media screen and (min-width: 376px) and (max-width: 414px) {
     html body #allButtons {
-      height: 330px; }
+      height: 396px; }
     @keyframes open {
       0% {
         height: 0px; }
       100% {
-        height: 330px; } } }
+        height: 396px; } } }
   @media screen and (min-width: 376px) and (max-width: 414px) and (min-width: 376px) and (max-width: 414px) {
     html body #allButtons .oneButton {
       padding: 15px 0 0 0;
@@ -444,12 +444,12 @@ html {
       font-size: 1.5rem; } }
   @media screen and (min-width: 415px) and (max-width: 699px) {
     html body #allButtons {
-      height: 330px; }
+      height: 396px; }
     @keyframes open {
       0% {
         height: 0px; }
       100% {
-        height: 330px; } } }
+        height: 396px; } } }
   @media screen and (min-width: 415px) and (max-width: 699px) and (min-width: 415px) and (max-width: 699px) {
     html body #allButtons .oneButton {
       padding: 15px 0 0 0;
@@ -490,12 +490,12 @@ html {
       font-size: 1.5rem; } }
   @media screen and (min-width: 700px) and (max-width: 1366px) {
     html body #allButtons {
-      height: 330px; }
+      height: 396px; }
     @keyframes open {
       0% {
         height: 0px; }
       100% {
-        height: 330px; } } }
+        height: 396px; } } }
   @media screen and (min-width: 700px) and (max-width: 1366px) and (min-width: 700px) and (max-width: 1366px) {
     html body #allButtons .oneButton {
       padding: 15px 0 0 0;
@@ -556,12 +556,12 @@ html {
       font-size: 1.5rem; } }
   @media screen and (min-width: 1367px) {
     html body #allButtons {
-      height: 330px; }
+      height: 396px; }
     @keyframes open {
       0% {
         height: 0px; }
       100% {
-        height: 330px; } } }
+        height: 396px; } } }
   @media screen and (min-width: 1367px) and (min-width: 1367px) {
     html body #allButtons .oneButton {
       padding: 15px 0 0 0;

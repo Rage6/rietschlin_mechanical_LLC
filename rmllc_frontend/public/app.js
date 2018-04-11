@@ -28,6 +28,7 @@ $(()=>{
   $('#heating-ac-Button').click(dropMainMenu);
   $('#refrigeration-Button').click(dropMainMenu);
   $('#contractButton').click(dropMainMenu);
+  $('#aboutUsButton').click(dropMainMenu);
   $('#contactButton').click(dropMainMenu);
 
   // AUTO SCROLL DOWN
@@ -42,6 +43,7 @@ $(()=>{
   var hvacTop = $("#heating-ac-Box").offset().top;
   var refTop  = $("#refrigeration-Box").offset().top;
   var contractTop = $("#contractBox").offset().top;
+  var aboutUsTop = $("#aboutUsBox").offset().top;
   var contactTop = $("#contactBox").offset().top;
   // Scrolls to electricalBox
   const elecScroll = () => {
@@ -75,19 +77,27 @@ $(()=>{
     }, 360)
   };
   $("#contractButton").click(contractScroll);
+  // Scroll to aboutUsBox
+  const aboutUsScroll = () => {
+    aboutUsTop = $("#aboutUsBox").offset().top;
+    $('html, body').animate({
+      scrollTop: aboutUsTop
+    }, 380)
+  };
+  $("#aboutUsButton").click(aboutUsScroll);
   // Scroll to contactBox
   const contactScroll = () => {
     contactTop = $("#contactBox").offset().top;
     $('html, body').animate({
       scrollTop: contactTop
-    }, 380)
+    }, 400)
   };
   $("#contactButton").click(contactScroll)
   //Scroll back to top of page
   const goUp = () => {
     $('html, body').animate({
       scrollTop: 0
-    }, 400)
+    }, 420)
   };
   $(".clickArrow").click(goUp);
 
