@@ -261,6 +261,8 @@ html {
                 @media screen and (min-width: 700px) {
                   html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton img {
                     margin-top: 40px; } }
+            html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailBox #emailButton:hover {
+              background-color: blue; }
           html body #mainContent #wrapBoxes .mainBox .boxContent .toTop img {
             margin-left: 45%;
             width: 10%;
@@ -320,6 +322,11 @@ html {
   @media screen and (max-width: 360px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .bottomImg {
       display: none; } }
+  html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailIntro #emailAddress {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.3rem; }
   @media screen and (min-width: 361px) and (max-width: 375px) {
     html body #backdrop #title #front {
       height: 260px; } }
@@ -368,7 +375,7 @@ html {
       font-size: 2.2rem; } }
   @media screen and (min-width: 361px) and (max-width: 375px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .description {
-      font-size: 1.3rem; } }
+      font-size: 1.5rem; } }
   @media screen and (min-width: 361px) and (max-width: 375px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .bottomImg {
       display: none; } }
@@ -420,7 +427,7 @@ html {
       font-size: 2.2rem; } }
   @media screen and (min-width: 376px) and (max-width: 414px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .description {
-      font-size: 1.3rem; } }
+      font-size: 1.4rem; } }
   @media screen and (min-width: 376px) and (max-width: 414px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox .bottomImg {
       display: none; } }
@@ -538,7 +545,10 @@ html {
   @media screen and (min-width: 700px) and (max-width: 1366px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailIntro {
       padding-right: 5%;
-      font-size: 1.7rem; } }
+      font-size: 1.7rem; }
+      html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailIntro #emailAddress {
+        margin-top: 40px;
+        font-size: 2.5rem; } }
   @media screen and (min-width: 1367px) {
     html body #topMenu {
       height: 50px;
@@ -602,6 +612,9 @@ html {
   @media screen and (min-width: 1367px) {
     html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailIntro {
       padding-right: 5%;
-      font-size: 1.9rem; } }
+      font-size: 1.9rem; }
+      html body #mainContent #wrapBoxes .mainBox .boxContent .flexBox #emailIntro #emailAddress {
+        margin-top: 40px;
+        font-size: 2.5rem; } }
 
 /*# sourceMappingURL=output.css.map */

@@ -123,6 +123,10 @@ body {
               @media screen and (min-width: $min-width) {
                 padding-right: 5%;
                 font-size: 1.9rem;
+                #emailAddress {
+                  margin-top: 40px;
+                  font-size: 2.5rem;
+                }
               }
             }
             #emailBox {

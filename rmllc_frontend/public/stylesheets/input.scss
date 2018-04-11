@@ -273,7 +273,9 @@ html {
                 }
               }
               #emailIntro {
+                #emailAddress {
 
+                }
               }
               #emailBox {
                 margin: 30px;
@@ -306,6 +308,9 @@ html {
                       margin-top: 40px;
                     }
                   }
+                }
+                #emailButton:hover {
+                  background-color: blue;
                 }
               }
             }
