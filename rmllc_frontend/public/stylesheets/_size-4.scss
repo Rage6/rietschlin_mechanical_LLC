@@ -137,6 +137,32 @@ body {
           }
         }
       }
+      #footer {
+        @media screen and (min-width: $min-width) and (max-width: $max-width) {
+          display: block;
+        }
+        a {
+          @media screen and (min-width: $min-width) and (max-width: $max-width) {
+
+          }
+          img {
+            @media screen and (min-width: $min-width) and (max-width: $max-width) {
+              position: relative;
+              left: 25%;
+              width: 50%;
+            }
+          }
+        }
+        div {
+          @media screen and (min-width: $min-width) and (max-width: $max-width) {
+            font-size: 1.1rem;
+            text-align: center;
+          }
+          a:hover {
+
+          }
+        }
+      }
     }
   }
 }
