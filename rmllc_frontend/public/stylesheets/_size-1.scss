@@ -127,20 +127,12 @@ body {
                 }
                 #underline {
                   @media screen and (max-width: $max-width) {
+                    margin-top: 20px;
                     font-size: 1.1rem;
                   }
                 }
               }
             }
-            // #emailAddress-1 {
-            //   @media screen and (max-width: $max-width) {
-            //      display: block;
-            //      margin: 20px 0 40px 0;
-            //      display: block;
-            //      text-align: center;
-            //      font-size: 1.3rem;
-            //   }
-            // }
           }
         }
       }
@@ -154,9 +146,9 @@ body {
           }
           img {
             @media screen and (max-width: $max-width) {
+              margin-left: 75%;
               position: relative;
-              left: 25%;
-              width: 50%;
+              right: 50%;
             }
           }
         }
