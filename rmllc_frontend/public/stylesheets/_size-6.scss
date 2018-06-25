@@ -160,6 +160,17 @@ body {
               }
             }
           }
+          .toTop {
+            @media screen and (min-width: $min-width) {
+              margin-top: 25px;
+              img {
+
+              }
+              img:hover {
+
+              }
+            }
+          }
         }
       }
     }

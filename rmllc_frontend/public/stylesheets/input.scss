@@ -334,6 +334,10 @@ html {
           div {
             margin: 0 5%;
             padding-top: 30px;
+            a {
+              display: inline-block;
+              color: white;
+            }
             a:hover {
               color: lightblue;
             }
