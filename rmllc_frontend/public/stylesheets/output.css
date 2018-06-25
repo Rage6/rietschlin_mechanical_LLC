@@ -14,7 +14,7 @@ html {
     font-size: 16px; }
     @media only screen and (min-width: 700px) {
       html body #backdrop {
-        background-image: url("img/desk_background.jpg");
+        background-image: url("img/background_metal.jpg");
         background-size: cover; } }
     html body #backdrop #title {
       margin: 0;
