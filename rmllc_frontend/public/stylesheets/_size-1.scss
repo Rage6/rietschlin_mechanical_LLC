@@ -134,6 +134,21 @@ body {
               }
             }
           }
+          .toTop {
+            @media screen and (max-width: $max-width) {
+              margin-top: 25px;
+              img {
+                @media screen and (max-width: $max-width) {
+
+                }
+              }
+              img:hover {
+                @media screen and (max-width: $max-width) {
+
+                }
+              }
+            }
+          }
         }
       }
       #footer {
@@ -142,13 +157,13 @@ body {
         }
         a {
           @media screen and (max-width: $max-width) {
-
+            
           }
           img {
             @media screen and (max-width: $max-width) {
-              margin-left: 75%;
+              margin-left: 50%;
               position: relative;
-              right: 50%;
+              right: 25%;
             }
           }
         }
