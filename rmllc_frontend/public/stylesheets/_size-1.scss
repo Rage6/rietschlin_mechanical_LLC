@@ -157,7 +157,7 @@ body {
         }
         a {
           @media screen and (max-width: $max-width) {
-            
+
           }
           img {
             @media screen and (max-width: $max-width) {
@@ -170,7 +170,12 @@ body {
         div {
           @media screen and (max-width: $max-width) {
             font-size: 1rem;
-            text-align: center;
+            text-align: left;
+          }
+          a {
+            @media screen and (max-width: $max-width) {
+              display: inline;
+            }
           }
           a:hover {
 
