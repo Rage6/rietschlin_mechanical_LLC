@@ -1,7 +1,7 @@
 # Rietschlin Mechanical LLC
 ## http://www.rietschlin-mechanical.com
 
-This was my first website for a client, a local business in Ohio called Rietschlin Mechanical, LLC. 
+This was my first website for a business, Rietschlin Mechanical LLC, which is a small, local business in rural Ohio. 
 <ul>
   <li>As a relatively simple website with no need to display a collection of data, I used a "one-page" design for this website.</li>
   <li>
