@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "jquery.localscroll": "^2.0.0",
     "jquery.scrollto": "^2.1.3",
     "json": "^10.0.0",
